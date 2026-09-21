@@ -72,6 +72,8 @@ Two independent pipelines feed one static site.
 | `watchlist.yaml` | yes | Tickers, CoinGecko ids, macro series, ticker-tape lists, RSS feeds + tabs. Edit this to change what is tracked. |
 | `fetch.py` | yes | Read `watchlist.yaml`, fetch prices (CoinGecko, yfinance) + RSS, write `data.json`. Runs in CI. |
 | `requirements.txt` | yes | Python deps for `fetch.py`. |
+| `make_icons.py`, `icons/` | yes | Pixel-robot home-screen icons (PNG 180/192/512 + SVG), generated without deps. Rerun after changing the mascot. |
+| `manifest.webmanifest` | yes | Web app manifest so the site installs to a phone home screen with the mascot icon. |
 | `brief.py` | yes | Build prompt from `profile.md` + `data.json`, run `claude -p`, validate, leak-check, write and push `brief.json`. Mac only. |
 | `.brief_state.json` | **no** | Past knowledge-card titles so topics don't repeat. Gitignored. |
 | `brief.json` | yes | Daily brief + reading recommendations. Public. |

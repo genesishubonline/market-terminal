@@ -38,7 +38,8 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          cp index.html data.json _site/
+          cp index.html data.json manifest.webmanifest _site/
+          cp -r icons _site/
           [ -f brief.json ] && cp brief.json _site/ || echo "no brief.json yet"
           touch _site/.nojekyll
           ls -la _site
