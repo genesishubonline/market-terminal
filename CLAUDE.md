@@ -11,7 +11,15 @@ Two independent pipelines feed one static site.
 
 ### 1. Data refresh (GitHub Actions, every 2 hours)
 
-- Workflow runs `fetch.py` on a schedule (every 2 hours) and on push to `main`.
+- Repo: https://github.com/genesishubonline/market-terminal (public).
+  Site: https://genesishubonline.github.io/market-terminal/ (Pages, source =
+  GitHub Actions). Commit author is the repo-local noreply identity
+  `genesishubonline <genesishubonline@users.noreply.github.com>`; never commit
+  with a real name or address.
+- Workflow `.github/workflows/pages.yml` ("Build and deploy") runs `fetch.py`
+  on a schedule (every 2 hours, `0 */2 * * *` UTC), on push to `main`, and by
+  `workflow_dispatch`. First run from a GitHub runner: 14 prices, 150
+  headlines, 0 errors, 7s.
 - `fetch.py` pulls prices and RSS headlines from public endpoints. **No AI, no
   API keys.** Only sources that work anonymously.
 - Output is written into the build directory and deployed straight to GitHub
