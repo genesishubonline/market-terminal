@@ -37,6 +37,7 @@ KNOWLEDGE_HISTORY = 90
 SCHEMA = """{
   "date": "YYYY-MM-DD",
   "headline": "the single most important story today, <= 70 chars, plain and concrete",
+  "headline_url": "url of the headline article, copied exactly from the headlines above",
   "lead": "one sentence, <= 28 words: what it means for markets",
   "chart": {
     "series": ["one or two symbols from the `chartable` list; two series are drawn rebased to % change"],
@@ -45,7 +46,7 @@ SCHEMA = """{
     "mark": {"t": "ISO-8601 UTC time of the key event within the last 7 days, or null", "label": "<= 18 chars"}
   },
   "points": [
-    {"title": "<= 7 words, the takeaway", "detail": "one sentence, <= 30 words, with the key number from the data"}
+    {"title": "<= 7 words, the takeaway", "detail": "one sentence, <= 30 words, with the key number from the data", "url": "url of the article this point is based on, copied exactly from the headlines above"}
   ],
   "knowledge": {
     "title_en": "short concept title in English",
@@ -154,7 +155,8 @@ Return ONE JSON object and nothing else (no markdown fences, no commentary) with
 - LANGUAGE: an item about the Japanese market (BOJ, yen, Nikkei/TOPIX, Japanese companies, FSA, MOF) is written ENTIRELY in Japanese: headline, lead, point title, point detail, chart title and note. Everything else is written in English. Never mix languages inside one item. `knowledge` always has both versions.
 - Be brief. The reader wants to digest the whole card in 30 seconds.
 - `chart` (Today): pick the series from `chartable` that best SHOWS the headline (e.g. USDJPY for a yen story, US10Y for a rates story, BTC for a crypto story). Two series only when the comparison is the insight (e.g. BTC vs IXIC). `mark.t` is the time of the event if it happened within the 7-day window, else null. `note` states what the reader should see.
-- `points`: EXACTLY 3, each a different theme from the headline (e.g. Japan, US/macro, crypto, regulation/AI). What moved and why it matters, with one concrete number from the data. Do not repeat the headline as a point.
+- `points`: EXACTLY 3, each a different theme from the headline (e.g. Japan, US/macro, crypto, regulation/AI). What moved and why it matters, with one concrete number from the data. Do not repeat the headline as a point. Each point carries the `url` of the headline it draws on, so the reader can read more.
+- Every `url` field must be copied character for character from the headlines above; anything else is dropped.
 - `knowledge`: teach one concept a serious market reader may not fully know (market structure, fundamentals, a regulation, a crypto mechanism, a macro relationship...). Connected to today's data when possible. Not covered before. Provide BOTH English and Japanese versions with the same content. `knowledge.chart`: a series from `chartable` that illustrates the concept, or null if none fits. `facts`: 2 to 4 key numbers that anchor the concept, taken from the data above or from stable, well-established public facts (e.g. a policy rate, a law's year); never guess. `sources` may be empty; if included, urls must come from the data above.
 - `reading`: EXACTLY 3 items chosen ONLY from the headlines above, url copied exactly, different feeds, not the headline article itself if possible.
 - Dates in `date` use YYYY-MM-DD and must equal {today}.
@@ -219,10 +221,14 @@ def validate_chart(c, symbols: set):
 
 def validate(brief: dict, data: dict, today: str) -> dict:
     allowed_urls = {i["url"] for f in data["news"] for i in f["items"]}
+    url_source = {i["url"]: f["feed"] for f in data["news"] for i in f["items"]}
     symbols = {c["symbol"].upper() for c in data.get("chartable", [])}
     out = {"date": today}
     if isinstance(brief.get("headline"), str):
         out["headline"] = brief["headline"].strip()[:140]
+    if brief.get("headline_url") in allowed_urls:
+        out["headline_url"] = brief["headline_url"]
+        out["headline_source"] = url_source[brief["headline_url"]]
     if isinstance(brief.get("lead"), str) and brief["lead"].strip():
         out["lead"] = brief["lead"].strip()[:300]
     ch = validate_chart(brief.get("chart"), symbols)
@@ -231,7 +237,11 @@ def validate(brief: dict, data: dict, today: str) -> dict:
     pts = []
     for p in brief.get("points", []):
         if isinstance(p, dict) and p.get("title"):
-            pts.append({"title": str(p["title"]).strip(), "detail": str(p.get("detail", "")).strip()})
+            row = {"title": str(p["title"]).strip(), "detail": str(p.get("detail", "")).strip()}
+            if p.get("url") in allowed_urls:
+                row["url"] = p["url"]
+                row["source"] = url_source[p["url"]]
+            pts.append(row)
         elif isinstance(p, str) and p.strip():
             pts.append({"title": p.strip(), "detail": ""})
     if len(pts) < 2:

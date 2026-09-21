@@ -110,9 +110,10 @@ counts: exactly 3 points, exactly 3 reading links.
   "date": "2026-09-20",
   "generated_at": "2026-09-20T22:00:00+00:00",
   "headline": "the one story of the day",
+  "headline_url": "article url", "headline_source": "feed name",
   "lead": "one sentence on what it means",
   "chart": {"series": ["USDJPY"], "title": "...", "note": "...", "mark": {"t": "ISO time", "label": "..."}},
-  "points": [{"title": "<= 7 words", "detail": "one sentence with a number"}],
+  "points": [{"title": "<= 7 words", "detail": "one sentence with a number", "url": "article url", "source": "feed name"}],
   "knowledge": {
     "title_en": "...", "title_ja": "...",
     "body_en": "2 short paragraphs", "body_ja": "...",
@@ -124,6 +125,11 @@ counts: exactly 3 points, exactly 3 reading links.
   "reading": [{"title": "...", "url": "...", "source": "feed", "why": "..."}]
 }
 ```
+
+Every `url` (headline, points, reading, knowledge sources) must be copied
+from the fetched headlines; `brief.py` drops any that isn't and fills `source`
+from the feed name. The page renders the headline as a link and a small
+"SOURCE ↗" tag after the headline and each point.
 
 Legacy fields (`points` as strings, `summary`, `knowledge.title/body`) still render.
 

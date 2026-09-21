@@ -148,6 +148,10 @@
   @media (min-width: 900px) { .today-grid.has-chart { grid-template-columns: minmax(0, 1fr) minmax(320px, 44%); } }
   .today-grid h3 { margin: 0 0 6px; font-size: 19px; line-height: 1.3; font-weight: 700; }
   .today-grid .lead { margin: 0; color: var(--muted); line-height: 1.5; }
+  .today-grid h3 a:hover { text-decoration-color: var(--amber); }
+  .srcl { font: 700 10.5px var(--mono); color: var(--blue); letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+  .today-grid h3 + .srcl { display: inline-block; margin: -2px 0 6px; }
+  .points span .srcl { margin-left: 4px; }
 
   .chart { background: #050505; border: 1px solid var(--border); padding: 8px 10px 6px; min-width: 0; }
   .chart.pending { min-height: 120px; }
@@ -490,10 +494,11 @@
   function renderBrief(b) {
     if (!b || typeof b !== 'object') return;
     const left = [];
-    if (b.headline) left.push(`<h3>${esc(b.headline)}</h3>`);
+    const src = (url, name) => url ? `<a class="srcl" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(name || 'source')} ↗</a>` : '';
+    if (b.headline) left.push(`<h3>${b.headline_url ? `<a href="${esc(b.headline_url)}" target="_blank" rel="noopener noreferrer">${esc(b.headline)}</a>` : esc(b.headline)}</h3>${src(b.headline_url, b.headline_source)}`);
     if (b.lead) left.push(`<p class="lead">${esc(b.lead)}</p>`);
     const pts = (b.points || []).slice(0, 3).map(p => typeof p === 'string' ? { title: p, detail: '' } : p);
-    if (pts.length) left.push('<ol class="points">' + pts.map(p => `<li><b>${esc(p.title)}</b>${p.detail ? `<span>${esc(p.detail)}</span>` : ''}</li>`).join('') + '</ol>');
+    if (pts.length) left.push('<ol class="points">' + pts.map(p => `<li><b>${esc(p.title)}</b>${p.detail ? `<span>${esc(p.detail)}${p.url ? ' ' + src(p.url, p.source) : ''}</span>` : (p.url ? `<span>${src(p.url, p.source)}</span>` : '')}</li>`).join('') + '</ol>');
     if (b.summary || b.body) left.push(paras(b.summary || b.body));
     const reads = (b.reading || []).slice(0, 3);
     if (reads.length) left.push('<h4>Read</h4><ul class="reads">' + reads.map(r => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer" title="${esc(r.why || '')}">${esc(r.title)}</a><span class="src">${esc(r.source || '')}</span></li>`).join('') + '</ul>');
