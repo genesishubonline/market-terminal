@@ -166,7 +166,7 @@ mainly to make these charts meaningful; it is fetched like indices into
   tz-aware intraday indexes; `closes_of()` normalizes everything to UTC.
 - TOPIX uses the 1306.T ETF as a proxy (no Yahoo index ticker). KOSPI is `^KS11`.
 - History is downsampled to `settings.history_points` per series to keep
-  `data.json` small (~60 KB total).
+  `data.json` reasonable (~150 KB with 39 feeds × 12 items).
 
 ## Page layout (`index.html`)
 
@@ -204,7 +204,10 @@ mainly to make these charts meaningful; it is fetched like indices into
   tasks never grows the row (add / check / remove / clear done,
   localStorage only). The brief section shows even when `brief.json` is
   missing so the Desk card is always available.
-  At >= 1600px the three sit in one row; below that Desk spans a second row.
+  At >= 1600px the three sit in one row; 900-1599px Desk spans a second row;
+  below 900px (phones) the three cards become a horizontal swipe row
+  (scroll-snap, 86vw each, next card peeks in) so Today and Learn sit side by
+  side instead of stacking.
   The three cards share one height (grid stretch): Learn is normally the
   tallest, Today's chart grows to fill up to a 380px plot cap, Desk's task list
   takes the rest and scrolls.
@@ -215,7 +218,19 @@ mainly to make these charts meaningful; it is fetched like indices into
 - The quote is one line, truncated with an ellipsis.
 - Section titles are 15px on a tinted bar; hue per section via `data-hue`.
 
-## Japanese sources
+## News sources (39 feeds, `watchlist.yaml` → `rss:`)
+
+Per tab: Japan 10, US 9, Crypto 7, Tech/AI 8, Regulation 8 (some feeds sit in
+two tabs). All keyless RSS, fetched in parallel (8 workers, ~13s total).
+Google News search feeds aggregate publishers; `fetch.py` stores the entry's
+`source.title` as `publisher` and the page shows that instead of the feed name.
+
+Probed and rejected (2026-09-21): WSJ feeds (frozen on year-old items), CNBC,
+The Verge, IMF, 経産省 (403 to bots), Yahoo Finance and VentureBeat (429),
+Treasury, Japan Times business, 財務省, BIS press (404), Blockworks and DL News
+(stale dates), ダイヤモンド and MAS (empty), FCA (undated junk titles like
+"Video"), Hacker News front page (off-topic). The 日本株・為替 aggregator query
+excludes prtimes.jp and atpress.ne.jp press releases. Re-probe before re-adding.
 
 nikkei.com has no public RSS. "日経" is a Google News RSS search scoped to
 nikkei.com with a 市場 query. NHK 経済 and 日銀 新着 are native feeds. Reuters

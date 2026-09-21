@@ -31,7 +31,7 @@ DATA = ROOT / "data.json"
 OUT = ROOT / "brief.json"
 STATE = ROOT / ".brief_state.json"          # gitignored: past knowledge topics
 FETCH_MAX_AGE = timedelta(hours=3)
-HEADLINES_PER_FEED = 8
+HEADLINES_PER_FEED = 6
 KNOWLEDGE_HISTORY = 90
 
 SCHEMA = """{

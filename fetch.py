@@ -277,40 +277,53 @@ def fetch_tape_stocks(entries: list, errors: list) -> list:
 
 # -------------------------------------------------------------------- rss ----
 
-def fetch_rss(feeds: list, limit: int, errors: list) -> list:
-    out = []
-    for f in feeds:
-        name, url = f["name"], f["url"]
-        try:
-            r = requests.get(
-                url, timeout=TIMEOUT,
-                headers={"User-Agent": USER_AGENT,
-                         "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.8"},
-            )
-            r.raise_for_status()
-            parsed = feedparser.parse(r.content)
-        except Exception as exc:
-            errors.append({"source": f"rss:{name}", "error": f"{type(exc).__name__}: {exc}"})
-            continue
-        if parsed.bozo and not parsed.entries:
-            errors.append({"source": f"rss:{name}", "error": f"parse error: {parsed.bozo_exception}"})
-            continue
+def fetch_one_feed(f: dict, limit: int):
+    """Fetch and parse one feed. Returns (feed_dict or None, error or None)."""
+    name, url = f["name"], f["url"]
+    try:
+        r = requests.get(
+            url, timeout=TIMEOUT,
+            headers={"User-Agent": USER_AGENT,
+                     "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.8"},
+        )
+        r.raise_for_status()
+        parsed = feedparser.parse(r.content)
+    except Exception as exc:
+        return None, {"source": f"rss:{name}", "error": f"{type(exc).__name__}: {exc}"}
+    if parsed.bozo and not parsed.entries:
+        return None, {"source": f"rss:{name}", "error": f"parse error: {parsed.bozo_exception}"}
 
-        items = []
-        for entry in parsed.entries[:limit]:
-            title = (entry.get("title") or "").strip()
-            if "news.google.com" in url and " - " in title:  # Google News appends " - Publisher"
-                title = title.rsplit(" - ", 1)[0].strip()
-            items.append({"title": title, "link": entry.get("link"), "published": _entry_time(entry)})
-        out.append({
-            "feed": name,
-            "url": url,
-            "tabs": [str(x) for x in (f.get("tabs") or [])],
-            "fetched_at": utc_now_iso(),
-            "items": items,
-        })
-        if not items:
-            errors.append({"source": f"rss:{name}", "error": "feed returned zero entries"})
+    is_google = "news.google.com" in url
+    items = []
+    for entry in parsed.entries[:limit]:
+        title = (entry.get("title") or "").strip()
+        if is_google and " - " in title:  # Google News appends " - Publisher"
+            title = title.rsplit(" - ", 1)[0].strip()
+        item = {"title": title, "link": entry.get("link"), "published": _entry_time(entry)}
+        src = entry.get("source")
+        if is_google and isinstance(src, dict) and src.get("title"):
+            item["publisher"] = src["title"].strip()  # aggregator: show the actual publisher
+        items.append(item)
+    feed = {
+        "feed": name,
+        "url": url,
+        "tabs": [str(x) for x in (f.get("tabs") or [])],
+        "fetched_at": utc_now_iso(),
+        "items": items,
+    }
+    return feed, ({"source": f"rss:{name}", "error": "feed returned zero entries"} if not items else None)
+
+
+def fetch_rss(feeds: list, limit: int, errors: list) -> list:
+    """All feeds in parallel, output in watchlist order."""
+    from concurrent.futures import ThreadPoolExecutor
+    out = []
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for feed, err in ex.map(lambda f: fetch_one_feed(f, limit), feeds):
+            if feed:
+                out.append(feed)
+            if err:
+                errors.append(err)
     return out
 
 
