@@ -115,9 +115,7 @@ counts: exactly 3 points, exactly 3 reading links.
   "chart": {"series": ["USDJPY"], "title": "...", "note": "...", "mark": {"t": "ISO time", "label": "..."}},
   "points": [{"title": "<= 7 words", "detail": "one sentence with a number", "url": "article url", "source": "feed name"}],
   "knowledge": {
-    "title_en": "...", "title_ja": "...",
-    "body_en": "2 short paragraphs", "body_ja": "...",
-    "why_en": "...", "why_ja": "...",
+    "title_en": "...", "body_en": "2 short paragraphs", "why_en": "...",
     "chart": {"series": ["USDJPY", "US10Y"], "title": "...", "note": "..."},
     "facts": [{"label": "BOJ policy rate", "value": "1.25%"}],
     "sources": [{"title": "...", "url": "..."}]
@@ -139,9 +137,9 @@ Legacy fields (`points` as strings, `summary`, `knowledge.title/body`) still ren
 
 An item about the Japanese market (BOJ, yen, Nikkei/TOPIX, Japanese companies,
 FSA, MOF) is written entirely in Japanese: headline, lead, point title and
-detail, chart title and note. Everything else is English. The knowledge card
-always has both `_en` and `_ja` versions. The page defaults to English wherever
-there is a choice (dates in en-US, Learn card EN unless the reader picks JA).
+detail, chart title and note. Everything else is English, including the
+knowledge card (English only; the `_en` field names are historical). Dates are
+en-US.
 
 ### Charts instead of pictures
 

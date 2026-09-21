@@ -134,9 +134,6 @@
   .tasks .foot button { background: none; border: 0; color: var(--amber); font: 700 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; padding: 0; }
   .tasks .empty { padding: 24px 0; }
   .brief-card { background: var(--panel); border: 1px solid var(--border); padding: 12px; min-width: 0; font-size: 13.5px; }
-  .brief-card h2 .lang { margin-left: auto; display: inline-flex; gap: 4px; }
-  .brief-card h2 .lang button { background: transparent; border: 1px solid var(--border-2); color: var(--muted); border-radius: 2px; padding: 1px 8px; font: 700 11px var(--mono); letter-spacing: .06em; }
-  .brief-card h2 .lang button[aria-selected="true"] { background: var(--hd); color: #000; border-color: var(--hd); }
 
   .brief-card.today { display: flex; flex-direction: column; }
   .today #briefcard { flex: 1; min-height: 0; display: flex; flex-direction: column; }
@@ -204,8 +201,6 @@
   .facts .v { font: 700 15px var(--mono); color: var(--amber-2); margin-top: 2px; }
   .learn .why { margin-top: 10px; padding: 8px 12px; border-left: 3px solid var(--blue); background: #0d1218; color: var(--ink-2); font-size: 13px; line-height: 1.5; }
   .learn .why b { color: var(--blue); font: 700 10.5px var(--mono); text-transform: uppercase; letter-spacing: .12em; display: block; margin-bottom: 2px; }
-  .learn [data-l] { display: none; }
-  .learn[data-lang="en"] [data-l="en"], .learn[data-lang="ja"] [data-l="ja"] { display: block; }
 
   /* Prices */
   .prices { display: grid; gap: 12px; grid-template-columns: 1fr; }
@@ -294,9 +289,7 @@
 <section id="brief" aria-label="Daily brief">
   <div class="brief-card today" data-hue="brief"><h2>Today <span class="n" id="brief-stamp"></span></h2><div id="briefcard"></div></div>
   <div class="brief-card learn" data-hue="learn">
-    <h2>Learn <span class="n">今日の学び</span>
-      <span class="lang" role="tablist" aria-label="Language"><button data-lang="en" role="tab">EN</button><button data-lang="ja" role="tab">JA</button></span>
-    </h2>
+    <h2>Learn <span class="n">concept of the day</span></h2>
     <div id="learncard"></div>
   </div>
   <div class="brief-card tasks" data-hue="brief">
@@ -520,16 +513,10 @@
   function renderLearn(k) {
     const card = document.querySelector('.learn');
     if (!k || !(k.title_en || k.title)) { card.style.display = 'none'; return; }
-    const en = { title: k.title_en || k.title, body: k.body_en || k.body, why: k.why_en || k.why_it_matters };
-    const ja = k.body_ja ? { title: k.title_ja || en.title, body: k.body_ja, why: k.why_ja || '' } : null;
+    const title = k.title_en || k.title, body = k.body_en || k.body, why = k.why_en || k.why_it_matters;
     const facts = (k.facts || []).length ? '<div class="facts">' + k.facts.map(f => `<div><div class="l">${esc(f.label)}</div><div class="v">${esc(f.value)}</div></div>`).join('') + '</div>' : '';
-    const block = (l, v) => `<div data-l="${l}"><h3>${esc(v.title)}</h3>${facts}${paras(v.body)}${v.why ? `<div class="why"><b>${l === 'ja' ? 'なぜ今重要か' : 'Why it matters now'}</b>${esc(v.why)}</div>` : ''}</div>`;
-    $('learncard').innerHTML = chartHTML(k.chart, { height: 150 }) + block('en', en) + (ja ? block('ja', ja) : '');
+    $('learncard').innerHTML = chartHTML(k.chart, { height: 150 }) + `<h3>${esc(title)}</h3>${facts}${paras(body)}${why ? `<div class="why"><b>Why it matters now</b>${esc(why)}</div>` : ''}`;
     mountCharts($('learncard'));
-    const btns = card.querySelectorAll('.lang button');
-    const setLang = (l) => { card.dataset.lang = l; btns.forEach(b => b.setAttribute('aria-selected', b.dataset.lang === l)); store.set('yt.lang', l); };
-    btns.forEach(b => { b.onclick = () => setLang(b.dataset.lang); b.style.display = (b.dataset.lang === 'ja' && !ja) ? 'none' : ''; });
-    setLang(ja && store.get('yt.lang') === 'ja' ? 'ja' : 'en');  // English unless the reader chose JA
   }
 
   // ---- sparklines (tiles) ----

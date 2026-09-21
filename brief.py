@@ -50,11 +50,8 @@ SCHEMA = """{
   ],
   "knowledge": {
     "title_en": "short concept title in English",
-    "title_ja": "same concept in Japanese",
-    "body_en": "2 short paragraphs separated by a blank line, <= 110 words total, plain text",
-    "body_ja": "same content in natural Japanese, <= 260 characters, plain text",
-    "why_en": "one sentence tying it to today's market",
-    "why_ja": "same in Japanese",
+    "body_en": "2 short paragraphs separated by a blank line, <= 110 words total, plain text, English",
+    "why_en": "one sentence tying it to today's market, English",
     "chart": {"series": ["..."], "title": "...", "note": "...", "mark": null},
     "facts": [{"label": "<= 20 chars", "value": "<= 12 chars, e.g. 1.25%"}],
     "sources": [{"title": "...", "url": "..."}]
@@ -153,13 +150,13 @@ Return ONE JSON object and nothing else (no markdown fences, no commentary) with
 # Rules
 - The output is PUBLISHED on a public web page. Do not mention the reader, their holdings, job, location, employer, or anything from the profile. Write in general market terms ("BTC fell", not "your BTC position").
 - Do not use any tools. Work only from the data above. If something is not in the data, do not invent it.
-- LANGUAGE: an item about the Japanese market (BOJ, yen, Nikkei/TOPIX, Japanese companies, FSA, MOF) is written ENTIRELY in Japanese: headline, lead, point title, point detail, chart title and note. Everything else is written in English. Never mix languages inside one item. `knowledge` always has both versions.
+- LANGUAGE: an item about the Japanese market (BOJ, yen, Nikkei/TOPIX, Japanese companies, FSA, MOF) is written ENTIRELY in Japanese: headline, lead, point title, point detail, chart title and note. Everything else is written in English. Never mix languages inside one item. `knowledge` is always English.
 - Be brief. The reader wants to digest the whole card in 30 seconds.
 - `chart` (Today): pick the series from `chartable` that best SHOWS the headline (e.g. USDJPY for a yen story, US10Y for a rates story, BTC for a crypto story). Two series only when the comparison is the insight (e.g. BTC vs IXIC). `mark.t` is the time of the event if it happened within the 7-day window, else null. `note` states what the reader should see.
 - `points`: EXACTLY 3, each a different theme from the headline (e.g. Japan, US/macro, crypto, regulation/AI). What moved and why it matters, with one concrete number from the data. Do not repeat the headline as a point. Each point carries the `url` of the headline it draws on, so the reader can read more.
 - Every `url` field must be copied character for character from the headlines above; anything else is dropped.
 - SOURCE DIVERSITY: the headline article and the three points' articles must come from FOUR DIFFERENT outlets (an outlet is the item's `publisher` if present, else its feed name). Never two from Reuters, two from Bloomberg, etc. The `reading` items must also be from three outlets not already used.
-- `knowledge`: teach one concept a serious market reader may not fully know (market structure, fundamentals, a regulation, a crypto mechanism, a macro relationship...). Connected to today's data when possible. Not covered before. Provide BOTH English and Japanese versions with the same content. `knowledge.chart`: a series from `chartable` that illustrates the concept, or null if none fits. `facts`: 2 to 4 key numbers that anchor the concept, taken from the data above or from stable, well-established public facts (e.g. a policy rate, a law's year); never guess. `sources` may be empty; if included, urls must come from the data above.
+- `knowledge`: teach one concept a serious market reader may not fully know (market structure, fundamentals, a regulation, a crypto mechanism, a macro relationship...). Connected to today's data when possible. Not covered before. English only. `knowledge.chart`: a series from `chartable` that illustrates the concept, or null if none fits. `facts`: 2 to 4 key numbers that anchor the concept, taken from the data above or from stable, well-established public facts (e.g. a policy rate, a law's year); never guess. `sources` may be empty; if included, urls must come from the data above.
 - `reading`: EXACTLY 3 items chosen ONLY from the headlines above, url copied exactly, different feeds, not the headline article itself if possible.
 - Dates in `date` use YYYY-MM-DD and must equal {today}.
 """
@@ -257,11 +254,8 @@ def validate(brief: dict, data: dict, today: str) -> dict:
     if isinstance(k, dict) and (k.get("title_en") or k.get("title")) and (k.get("body_en") or k.get("body")):
         kn = {
             "title_en": str(k.get("title_en") or k.get("title")).strip(),
-            "title_ja": str(k.get("title_ja", "")).strip(),
             "body_en": str(k.get("body_en") or k.get("body")).strip(),
-            "body_ja": str(k.get("body_ja", "")).strip(),
             "why_en": str(k.get("why_en") or k.get("why_it_matters", "")).strip(),
-            "why_ja": str(k.get("why_ja", "")).strip(),
             "facts": [{"label": str(f["label"]).strip()[:30], "value": str(f["value"]).strip()[:20]}
                       for f in (k.get("facts") or []) if isinstance(f, dict) and f.get("label") and f.get("value")][:4],
             "sources": [x for x in k.get("sources", []) if isinstance(x, dict) and x.get("url") in allowed_urls][:2],
