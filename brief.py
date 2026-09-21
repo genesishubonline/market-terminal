@@ -31,7 +31,7 @@ DATA = ROOT / "data.json"
 OUT = ROOT / "brief.json"
 STATE = ROOT / ".brief_state.json"          # gitignored: past knowledge topics
 FETCH_MAX_AGE = timedelta(hours=3)
-HEADLINES_PER_FEED = 6
+HEADLINES_PER_FEED = 5
 KNOWLEDGE_HISTORY = 90
 
 SCHEMA = """{
@@ -97,7 +97,8 @@ def compact(data: dict) -> dict:
     p = data.get("prices", {})
     news = []
     for f in data.get("news", []):
-        items = [{"title": i["title"], "url": i["link"], "published": i.get("published")}
+        items = [{"title": i["title"], "url": i["link"], "published": i.get("published"),
+                  **({"publisher": i["publisher"]} if i.get("publisher") else {})}
                  for i in f.get("items", [])[:HEADLINES_PER_FEED] if i.get("title")]
         if items:
             news.append({"feed": f["feed"], "tabs": f.get("tabs", []), "items": items})
@@ -157,6 +158,7 @@ Return ONE JSON object and nothing else (no markdown fences, no commentary) with
 - `chart` (Today): pick the series from `chartable` that best SHOWS the headline (e.g. USDJPY for a yen story, US10Y for a rates story, BTC for a crypto story). Two series only when the comparison is the insight (e.g. BTC vs IXIC). `mark.t` is the time of the event if it happened within the 7-day window, else null. `note` states what the reader should see.
 - `points`: EXACTLY 3, each a different theme from the headline (e.g. Japan, US/macro, crypto, regulation/AI). What moved and why it matters, with one concrete number from the data. Do not repeat the headline as a point. Each point carries the `url` of the headline it draws on, so the reader can read more.
 - Every `url` field must be copied character for character from the headlines above; anything else is dropped.
+- SOURCE DIVERSITY: the headline article and the three points' articles must come from FOUR DIFFERENT outlets (an outlet is the item's `publisher` if present, else its feed name). Never two from Reuters, two from Bloomberg, etc. The `reading` items must also be from three outlets not already used.
 - `knowledge`: teach one concept a serious market reader may not fully know (market structure, fundamentals, a regulation, a crypto mechanism, a macro relationship...). Connected to today's data when possible. Not covered before. Provide BOTH English and Japanese versions with the same content. `knowledge.chart`: a series from `chartable` that illustrates the concept, or null if none fits. `facts`: 2 to 4 key numbers that anchor the concept, taken from the data above or from stable, well-established public facts (e.g. a policy rate, a law's year); never guess. `sources` may be empty; if included, urls must come from the data above.
 - `reading`: EXACTLY 3 items chosen ONLY from the headlines above, url copied exactly, different feeds, not the headline article itself if possible.
 - Dates in `date` use YYYY-MM-DD and must equal {today}.
@@ -221,7 +223,7 @@ def validate_chart(c, symbols: set):
 
 def validate(brief: dict, data: dict, today: str) -> dict:
     allowed_urls = {i["url"] for f in data["news"] for i in f["items"]}
-    url_source = {i["url"]: f["feed"] for f in data["news"] for i in f["items"]}
+    url_source = {i["url"]: (i.get("publisher") or f["feed"]) for f in data["news"] for i in f["items"]}
     symbols = {c["symbol"].upper() for c in data.get("chartable", [])}
     out = {"date": today}
     if isinstance(brief.get("headline"), str):
@@ -247,6 +249,10 @@ def validate(brief: dict, data: dict, today: str) -> dict:
     if len(pts) < 2:
         die(f"too few points: {pts}")
     out["points"] = pts[:3]
+    used = [out.get("headline_source")] + [p.get("source") for p in out["points"]]
+    used = [u for u in used if u]
+    if len(set(used)) < len(used):
+        print(f"warning: repeated outlet in headline/points: {used}", file=sys.stderr)
     k = brief.get("knowledge") or {}
     if isinstance(k, dict) and (k.get("title_en") or k.get("title")) and (k.get("body_en") or k.get("body")):
         kn = {

@@ -10,6 +10,7 @@ Exits non-zero only if nothing at all could be fetched.
 
 import calendar
 import json
+import re
 import sys
 import time
 import warnings
@@ -303,6 +304,9 @@ def fetch_one_feed(f: dict, limit: int):
         src = entry.get("source")
         if is_google and isinstance(src, dict) and src.get("title"):
             item["publisher"] = src["title"].strip()  # aggregator: show the actual publisher
+        extra = [tab for tab, rx in (f.get("also") or {}).items() if rx and re.search(rx, title)]
+        if extra:
+            item["extra_tabs"] = extra  # per-item routing, e.g. CoinPost's Japan-domestic stories
         items.append(item)
     feed = {
         "feed": name,

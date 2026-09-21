@@ -106,38 +106,49 @@ tape:
 
 rss:
   # tabs: which headline tabs a feed appears in (japan, us, crypto, tech, regulation)
-  # Google News search feeds (news.google.com) aggregate several publishers; the page shows the publisher.
+  # also: {tab: regex} routes individual items whose title matches into an extra tab.
+  # Google News search feeds (news.google.com) aggregate publishers; the page shows the publisher.
+  # Scope: finance, economy, politics, crypto. Western media outside the Japan tab.
 
-  # ---- Japan ----
-  - name: 日経
+  # ---- Japan: markets, economy, politics ----
+  - name: 日経 市場
     tabs: [japan]
     url: "https://news.google.com/rss/search?q=site:nikkei.com+%E5%B8%82%E5%A0%B4&hl=ja&gl=JP&ceid=JP:ja"
-  - name: Nikkei Asia
+  - name: 日経 経済
     tabs: [japan]
-    url: https://asia.nikkei.com/rss/feed/nar
-  - name: NHK 経済
+    url: "https://news.google.com/rss/search?q=site:nikkei.com+%E7%B5%8C%E6%B8%88&hl=ja&gl=JP&ceid=JP:ja"
+  - name: 日経 政治
     tabs: [japan]
-    url: https://www.nhk.or.jp/rss/news/cat5.xml
-  - name: 日銀 新着
-    tabs: [japan, regulation]
-    url: https://www.boj.or.jp/rss/whatsnew.xml
+    url: "https://news.google.com/rss/search?q=site:nikkei.com+%E6%94%BF%E6%B2%BB&hl=ja&gl=JP&ceid=JP:ja"
   - name: 日本株・為替
     tabs: [japan]
     url: "https://news.google.com/rss/search?q=(%E6%97%A5%E7%B5%8C%E5%B9%B3%E5%9D%87+OR+%E6%9D%B1%E8%A8%BC+OR+%E5%86%86%E7%9B%B8%E5%A0%B4)+-site:prtimes.jp+-site:atpress.ne.jp&hl=ja&gl=JP&ceid=JP:ja"
-  - name: 東洋経済
+  - name: NHK 経済
     tabs: [japan]
-    url: https://toyokeizai.net/list/feed/rss
+    url: https://www.nhk.or.jp/rss/news/cat5.xml
+  - name: NHK 政治
+    tabs: [japan]
+    url: https://www.nhk.or.jp/rss/news/cat4.xml
+  - name: Nikkei Asia
+    tabs: [japan]
+    url: https://asia.nikkei.com/rss/feed/nar
   - name: The Japan Times
     tabs: [japan]
-    url: https://www.japantimes.co.jp/feed/
-  - name: ITmedia ビジネス
-    tabs: [japan]
-    url: https://rss.itmedia.co.jp/rss/2.0/business.xml
+    url: "https://news.google.com/rss/search?q=site:japantimes.co.jp+(business+OR+economy+OR+politics+OR+BOJ+OR+yen)&hl=en-US&gl=US&ceid=US:en"
+  - name: 日銀 新着
+    tabs: [japan, regulation]
+    url: https://www.boj.or.jp/rss/whatsnew.xml
+  - name: FSA 新着情報
+    tabs: [regulation, japan]
+    url: https://www.fsa.go.jp/fsaNewsListAll_rss2.xml
 
-  # ---- US / global markets ----
+  # ---- US: markets, economy, politics (Western media) ----
   - name: Reuters Business
     tabs: [us]
     url: "https://news.google.com/rss/search?q=site:reuters.com/business&hl=en-US&gl=US&ceid=US:en"
+  - name: Reuters Politics
+    tabs: [us]
+    url: "https://news.google.com/rss/search?q=site:reuters.com/world/us&hl=en-US&gl=US&ceid=US:en"
   - name: FT Markets
     tabs: [us]
     url: "https://www.ft.com/markets?format=rss"
@@ -150,12 +161,24 @@ rss:
   - name: NYT Business
     tabs: [us]
     url: https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+  - name: NYT Politics
+    tabs: [us]
+    url: https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml
   - name: MarketWatch
     tabs: [us]
     url: https://feeds.content.dowjones.io/public/rss/mw_topstories
-  - name: Economic Times Markets
+  - name: Barron's
     tabs: [us]
-    url: https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms
+    url: "https://news.google.com/rss/search?q=site:barrons.com&hl=en-US&gl=US&ceid=US:en"
+  - name: BBC Business
+    tabs: [us]
+    url: http://feeds.bbci.co.uk/news/business/rss.xml
+  - name: The Economist
+    tabs: [us]
+    url: https://www.economist.com/finance-and-economics/rss.xml
+  - name: Politico
+    tabs: [us]
+    url: https://rss.politico.com/politics-news.xml
 
   # ---- Crypto ----
   - name: CoinDesk
@@ -170,17 +193,20 @@ rss:
   - name: Decrypt
     tabs: [crypto]
     url: https://decrypt.co/feed
-  - name: CoinPost
-    tabs: [crypto, japan]
-    url: "https://coinpost.jp/?feed=rss2"
   - name: Bitcoin Magazine
     tabs: [crypto]
     url: https://bitcoinmagazine.com/.rss/full/
   - name: CryptoSlate
     tabs: [crypto]
     url: https://cryptoslate.com/feed/
+  - name: CoinPost
+    tabs: [crypto]
+    # Japanese crypto outlet: global stories stay in Crypto; Japan-domestic ones also go to Japan.
+    also:
+      japan: "日本|国内|金融庁|日銀|円建て|東京|首相|財務省|自民|国税|税制|JPX|東証|SBI|bitFlyer|ビットフライヤー|Coincheck|コインチェック|GMO|楽天|メルカリ|DMM|三菱UFJ|みずほ|三井住友|野村|マネックス|JVCEA|暗号資産交換業|与党|法案"
+    url: "https://coinpost.jp/?feed=rss2"
 
-  # ---- Tech / AI ----
+  # ---- Tech / AI (Western media) ----
   - name: TechCrunch AI
     tabs: [tech]
     url: https://techcrunch.com/category/artificial-intelligence/feed/
@@ -190,6 +216,12 @@ rss:
   - name: Bloomberg Technology
     tabs: [tech]
     url: https://feeds.bloomberg.com/technology/news.rss
+  - name: Reuters Technology
+    tabs: [tech]
+    url: "https://news.google.com/rss/search?q=site:reuters.com/technology&hl=en-US&gl=US&ceid=US:en"
+  - name: NYT Technology
+    tabs: [tech]
+    url: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
   - name: Ars Technica AI
     tabs: [tech]
     url: https://arstechnica.com/ai/feed/
@@ -202,17 +234,11 @@ rss:
   - name: The Information
     tabs: [tech]
     url: https://www.theinformation.com/feed
-  - name: ITmedia AI+
-    tabs: [tech]
-    url: https://rss.itmedia.co.jp/rss/2.0/aiplus.xml
 
   # ---- Regulation ----
   - name: SEC Press Releases
     tabs: [regulation, us]
     url: https://www.sec.gov/news/pressreleases.rss
-  - name: FSA 新着情報
-    tabs: [regulation, japan]
-    url: https://www.fsa.go.jp/fsaNewsListAll_rss2.xml
   - name: Federal Reserve
     tabs: [regulation, us]
     url: https://www.federalreserve.gov/feeds/press_all.xml
@@ -222,6 +248,9 @@ rss:
   - name: ECB
     tabs: [regulation]
     url: https://www.ecb.europa.eu/rss/press.html
+  - name: Reuters Regulation
+    tabs: [regulation]
+    url: "https://news.google.com/rss/search?q=site:reuters.com+(SEC+OR+regulator+OR+antitrust+OR+%22central+bank%22)&hl=en-US&gl=US&ceid=US:en"
   - name: CoinDesk Policy
     tabs: [regulation]
     url: "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml&section=policy"
@@ -230,7 +259,7 @@ rss:
     url: "https://news.google.com/rss/search?q=crypto+regulation+OR+stablecoin+bill+OR+SEC+crypto&hl=en-US&gl=US&ceid=US:en"
 
 settings:
-  items_per_feed: 12
+  items_per_feed: 10
   fiat: [usd, jpy]
   history_days: 7      # sparkline window
   history_points: 90   # max points kept per series in data.json

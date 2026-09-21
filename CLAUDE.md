@@ -128,7 +128,9 @@ counts: exactly 3 points, exactly 3 reading links.
 
 Every `url` (headline, points, reading, knowledge sources) must be copied
 from the fetched headlines; `brief.py` drops any that isn't and fills `source`
-from the feed name. The page renders the headline as a link and a small
+from the item's publisher (aggregators) or feed name. The headline and the
+three points must come from four different outlets, and the reading list from
+three more; the prompt enforces it and `brief.py` warns on a repeat. The page renders the headline as a link and a small
 "SOURCE ↗" tag after the headline and each point.
 
 Legacy fields (`points` as strings, `summary`, `knowledge.title/body`) still render.
@@ -218,18 +220,33 @@ mainly to make these charts meaningful; it is fetched like indices into
 - The quote is one line, truncated with an ellipsis.
 - Section titles are 15px on a tinted bar; hue per section via `data-hue`.
 
-## News sources (39 feeds, `watchlist.yaml` → `rss:`)
+## News sources (45 feeds, `watchlist.yaml` → `rss:`)
 
-Per tab: Japan 10, US 9, Crypto 7, Tech/AI 8, Regulation 8 (some feeds sit in
-two tabs). All keyless RSS, fetched in parallel (8 workers, ~13s total).
+Scope: finance, economy, politics, crypto. Nothing lifestyle or general-interest.
+Japan tab = Japanese and Japan-focused outlets (日経 市場/経済/政治, NHK 経済/政治,
+Nikkei Asia, Japan Times business+politics, 日銀, FSA, a 日本株・為替 aggregator).
+Every other tab uses Western media only (Reuters, FT, Bloomberg, NYT, Barron's,
+BBC, The Economist, MarketWatch, Politico; CoinDesk, The Block, Cointelegraph,
+Decrypt, Bitcoin Magazine, CryptoSlate; TechCrunch, Ars, MIT TR, Wired, The
+Information; SEC, Fed, CFTC, ECB). Per tab: Japan 10, US 14, Crypto 7, Tech/AI
+9, Regulation 9 (some feeds sit in two tabs). Fetched in parallel (~4s).
+
+Per-item routing: a feed may declare `also: {tab: regex}`; items whose title
+matches get `extra_tabs`. CoinPost (Japanese crypto outlet) lives in Crypto and
+its Japan-domestic stories (金融庁, 税制, 国内 ...) also appear in Japan.
+
 Google News search feeds aggregate publishers; `fetch.py` stores the entry's
 `source.title` as `publisher` and the page shows that instead of the feed name.
+The page caps each tab at 20 items (`MAX_PER_TAB`), newest first with at most
+2 per outlet in the top 5; "View more" reveals the remaining 15.
 
 Probed and rejected (2026-09-21): WSJ feeds (frozen on year-old items), CNBC,
 The Verge, IMF, 経産省 (403 to bots), Yahoo Finance and VentureBeat (429),
-Treasury, Japan Times business, 財務省, BIS press (404), Blockworks and DL News
-(stale dates), ダイヤモンド and MAS (empty), FCA (undated junk titles like
-"Video"), Hacker News front page (off-topic). The 日本株・為替 aggregator query
+Treasury, Japan Times business feed, 財務省, BIS press, Semafor (404), Blockworks
+and DL News (stale dates), ダイヤモンド and MAS (empty), FCA (undated junk
+titles), Hacker News (off-topic), Politico picks and BoE (403). Removed by
+scope: 東洋経済, ITmedia ビジネス/AI+ (lifestyle/Japanese tech), Economic Times
+(non-Western). The 日本株・為替 aggregator query
 excludes prtimes.jp and atpress.ne.jp press releases. Re-probe before re-adding.
 
 nikkei.com has no public RSS. "日経" is a Google News RSS search scoped to
