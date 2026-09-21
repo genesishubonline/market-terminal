@@ -1,0 +1,146 @@
+# Watchlist for fetch.py. Public data only, no keys.
+# Add stocks under `stocks:` using the same shape as `indices:`.
+
+crypto:
+  # coingecko_id: spot price. yahoo_ticker (default SYMBOL-USD): 7-day history via yfinance.
+  - symbol: BTC
+    name: Bitcoin
+    coingecko_id: bitcoin
+  - symbol: ETH
+    name: Ethereum
+    coingecko_id: ethereum
+  - symbol: SOL
+    name: Solana
+    coingecko_id: solana
+
+indices:
+  # Yahoo Finance tickers, fetched via yfinance
+  - symbol: N225
+    name: Nikkei 225
+    ticker: "^N225"
+  - symbol: TOPIX
+    name: TOPIX
+    # Yahoo has no TOPIX index ticker. NEXT FUNDS TOPIX ETF tracks it closely.
+    ticker: "1306.T"
+    note: "proxy: NEXT FUNDS TOPIX ETF (1306.T)"
+  - symbol: SPX
+    name: S&P 500
+    ticker: "^GSPC"
+  - symbol: IXIC
+    name: Nasdaq Composite
+    ticker: "^IXIC"
+  - symbol: KOSPI
+    name: KOSPI
+    ticker: "^KS11"
+  - symbol: USDJPY
+    name: USD/JPY
+    ticker: "JPY=X"
+
+stocks: []
+
+# Macro series: charted in the brief when relevant, not shown as tiles.
+macro:
+  - symbol: US10Y
+    name: US 10Y yield
+    ticker: "^TNX"
+    unit: "%"
+  - symbol: VIX
+    name: VIX
+    ticker: "^VIX"
+  - symbol: DXY
+    name: Dollar index
+    ticker: "DX-Y.NYB"
+  - symbol: GOLD
+    name: Gold
+    ticker: "GC=F"
+    unit: "$/oz"
+  - symbol: WTI
+    name: WTI crude
+    ticker: "CL=F"
+    unit: "$/bbl"
+  # - symbol: 7203
+  #   name: Toyota
+  #   ticker: "7203.T"
+
+# Scrolling ticker tapes. `stocks` runs under the Indices panel, `crypto` under the Crypto panel.
+tape:
+  stocks:
+    - { symbol: "7203", name: Toyota, ticker: "7203.T" }
+    - { symbol: "6758", name: Sony, ticker: "6758.T" }
+    - { symbol: "9984", name: SoftBank G, ticker: "9984.T" }
+    - { symbol: "8306", name: MUFG, ticker: "8306.T" }
+    - { symbol: "8035", name: Tokyo Electron, ticker: "8035.T" }
+    - { symbol: "7974", name: Nintendo, ticker: "7974.T" }
+    - { symbol: "6501", name: Hitachi, ticker: "6501.T" }
+    - { symbol: "9983", name: Fast Retailing, ticker: "9983.T" }
+    - { symbol: "005930", name: Samsung, ticker: "005930.KS" }
+    - { symbol: "000660", name: SK Hynix, ticker: "000660.KS" }
+    - { symbol: AAPL, name: Apple, ticker: AAPL }
+    - { symbol: MSFT, name: Microsoft, ticker: MSFT }
+    - { symbol: NVDA, name: Nvidia, ticker: NVDA }
+    - { symbol: GOOGL, name: Alphabet, ticker: GOOGL }
+    - { symbol: AMZN, name: Amazon, ticker: AMZN }
+    - { symbol: META, name: Meta, ticker: META }
+    - { symbol: TSLA, name: Tesla, ticker: TSLA }
+    - { symbol: TSM, name: TSMC, ticker: TSM }
+    - { symbol: COIN, name: Coinbase, ticker: COIN }
+    - { symbol: MSTR, name: Strategy, ticker: MSTR }
+  crypto:
+    - { symbol: XRP, name: XRP, coingecko_id: ripple }
+    - { symbol: BNB, name: BNB, coingecko_id: binancecoin }
+    - { symbol: DOGE, name: Dogecoin, coingecko_id: dogecoin }
+    - { symbol: ADA, name: Cardano, coingecko_id: cardano }
+    - { symbol: TRX, name: Tron, coingecko_id: tron }
+    - { symbol: AVAX, name: Avalanche, coingecko_id: avalanche-2 }
+    - { symbol: LINK, name: Chainlink, coingecko_id: chainlink }
+    - { symbol: DOT, name: Polkadot, coingecko_id: polkadot }
+    - { symbol: TON, name: Toncoin, coingecko_id: the-open-network }
+    - { symbol: SUI, name: Sui, coingecko_id: sui }
+    - { symbol: HYPE, name: Hyperliquid, coingecko_id: hyperliquid }
+    - { symbol: NEAR, name: NEAR, coingecko_id: near }
+    - { symbol: APT, name: Aptos, coingecko_id: aptos }
+    - { symbol: UNI, name: Uniswap, coingecko_id: uniswap }
+    - { symbol: AAVE, name: Aave, coingecko_id: aave }
+    - { symbol: LTC, name: Litecoin, coingecko_id: litecoin }
+    - { symbol: ASTR, name: Astar, coingecko_id: astar }
+
+rss:
+  # tabs: which headline tabs a feed appears in (japan, us, crypto, tech, regulation)
+  - name: 日経
+    tabs: [japan]
+    # nikkei.com has no public RSS. Google News search scoped to nikkei.com, 市場 (markets) query.
+    url: "https://news.google.com/rss/search?q=site:nikkei.com+%E5%B8%82%E5%A0%B4&hl=ja&gl=JP&ceid=JP:ja"
+  - name: Nikkei Asia
+    tabs: [japan]
+    url: https://asia.nikkei.com/rss/feed/nar
+  - name: NHK 経済
+    tabs: [japan]
+    url: https://www.nhk.or.jp/rss/news/cat5.xml
+  - name: 日銀 新着
+    tabs: [japan, regulation]
+    url: https://www.boj.or.jp/rss/whatsnew.xml
+  - name: Reuters Business
+    tabs: [us]
+    # Reuters has no public RSS. This is a Google News search feed scoped to reuters.com/business.
+    url: "https://news.google.com/rss/search?q=site:reuters.com/business&hl=en-US&gl=US&ceid=US:en"
+  - name: CoinDesk
+    tabs: [crypto]
+    url: https://www.coindesk.com/arc/outboundfeeds/rss/
+  - name: The Block
+    tabs: [crypto]
+    url: https://www.theblock.co/rss.xml
+  - name: TechCrunch AI
+    tabs: [tech]
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+  - name: SEC Press Releases
+    tabs: [regulation, us]
+    url: https://www.sec.gov/news/pressreleases.rss
+  - name: FSA 新着情報
+    tabs: [regulation, japan]
+    url: https://www.fsa.go.jp/fsaNewsListAll_rss2.xml
+
+settings:
+  items_per_feed: 15
+  fiat: [usd, jpy]
+  history_days: 7      # sparkline window
+  history_points: 90   # max points kept per series in data.json

@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-20",
+  "headline": "日銀1.25%に利上げも円安加速、158円台で日銀がレートチェック実施",
+  "lead": "利上げ後の植田総裁発言で円は158円台まで下落し、レートチェックで介入警戒が高まりドル円は156円台に押し戻された。",
+  "chart": {
+    "series": [
+      "USDJPY"
+    ],
+    "title": "ドル円 7日間：利上げ後に円安が加速",
+    "note": "利上げ直後に158円台へ、レートチェックで反落",
+    "mark": {
+      "t": "2026-09-18T18:43:00+00:00",
+      "label": "レートチェック"
+    }
+  },
+  "points": [
+    {
+      "title": "10Y yield knocks on 5% door",
+      "detail": "The US 10-year closed at 4.998% after Fed's Kashkari said inflation is still too high, while VIX fell to 14.81, so bonds worry more than stocks."
+    },
+    {
+      "title": "BTC holds $80k as ETFs buy",
+      "detail": "Bitcoin at $81,193 is up 5.69% on the week and Solana 11.06%, helped by a $433 million Friday inflow into bitcoin ETFs."
+    },
+    {
+      "title": "Tokenized stocks get SEC green light",
+      "detail": "SEC's innovation exemption for tokenized NMS stock has analysts naming Coinbase, Robinhood and Circle as winners, even as Gemini trades 80% below its IPO price."
+    }
+  ],
+  "knowledge": {
+    "title_en": "The Yen Carry Trade",
+    "title_ja": "円キャリー取引",
+    "body_en": "A carry trade borrows in a low-rate currency and invests in a higher-yielding one, pocketing the rate gap. The yen has been the classic funding currency because Japan's rates stayed far below those abroad, so investors sell yen to buy dollars, adding steady downward pressure on the currency.\n\nThe trade pays as long as the gap is wide and the yen does not rise sharply. A rate hike in Japan narrows the spread, but only slightly if US yields stay high. The real risk is a sudden yen rally: it forces carry positions to unwind at once, which is why intervention signals move the market so fast.",
+    "body_ja": "キャリー取引とは、低金利通貨で資金を借り、高金利通貨で運用して金利差を得る手法です。日本の金利が海外より大幅に低かったため、円は代表的な調達通貨となり、円売り・ドル買いが円安圧力を生み続けてきました。\n\n金利差が大きく円が急騰しなければ利益が出ます。日本の利上げで差は縮まりますが、米金利が高止まりすれば効果は限定的です。最大のリスクは円の急騰で、ポジションの一斉解消を招くため、介入シグナルに市場は敏感に反応します。",
+    "why_en": "The BOJ's hike to 1.25% still leaves a wide gap against a US 10-year near 5%, so carry pressure on the yen persists.",
+    "why_ja": "日銀が1.25%に利上げしても、5%近い米10年債利回りとの差は大きく、円へのキャリー圧力は続いています。",
+    "facts": [
+      {
+        "label": "BOJ policy rate",
+        "value": "1.25%"
+      },
+      {
+        "label": "US 10Y yield",
+        "value": "4.998%"
+      },
+      {
+        "label": "USD/JPY",
+        "value": "156.98"
+      },
+      {
+        "label": "USD/JPY 7d range",
+        "value": "153.4–157.9"
+      }
+    ],
+    "sources": [
+      {
+        "title": "日銀が「レートチェック」を実施 円安けん制か",
+        "url": "https://news.web.nhk/newsweb/na/nd-20260919de51169"
+      },
+      {
+        "title": "日銀1.25%に利上げ 「追加利上げも試行錯誤」市場関係者の見方",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhSXRibENkQTM0TDFaTGlteHJjaHhGcGNvR25TTzVlSU9FMHI5enFCeGx6U3lRQTRuQUJOVFI5X3pGZTBjRms1NU82UFFyMTVlV3FHYURRYlBFY1FkMzZiYnVkbWtyOEo0a1pQVQ?oc=5"
+      }
+    ],
+    "chart": {
+      "series": [
+        "USDJPY",
+        "US10Y"
+      ],
+      "title": "USD/JPY vs US 10Y, 7 days (rebased)",
+      "note": "Yen weakens as US yields climb toward 5%"
+    }
+  },
+  "reading": [
+    {
+      "title": "「望まぬ利上げ加速」招いた高市財政 市場混乱で沈黙、危うい同床異夢",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5NeUNvRmpQbUxZSU9BRFd3andta2JXX09CYnVycXFHeEVaNVJlb0tZVkV6VXZnNjBqLUdURENlUFR5czhtQzBVZFVwSUtFVWJKekMyd1p2dGczTktTZzdBNFNDekRJejk1NGViWg?oc=5",
+      "source": "日経",
+      "why": "財政と日銀利上げの関係を読む"
+    },
+    {
+      "title": "Bitcoin ETFs eke out positive week with $433 million Friday inflow as ether funds snap four-week inflow streak",
+      "url": "https://www.theblock.co/news/markets/2026-09-19-bitcoin-etfs-eke-out-positive-week-with-433-million-friday-inflow-as-ether-funds-snap-four-week-inflow-streak-415871",
+      "source": "The Block",
+      "why": "The flows behind BTC's $80k reclaim"
+    },
+    {
+      "title": "Coinbase, Robinhood, Circle could be early winners of SEC's tokenized-stock push, analysts say",
+      "url": "https://www.coindesk.com/business/2026/09/20/coinbase-robinhood-circle-could-be-early-winners-of-sec-s-tokenized-stock-push-analysts-say",
+      "source": "CoinDesk",
+      "why": "Who gains from the SEC exemption"
+    }
+  ],
+  "generated_at": "2026-09-20T23:34:19+00:00"
+}
