@@ -17,7 +17,8 @@ Two independent pipelines feed one static site.
   `genesishubonline <genesishubonline@users.noreply.github.com>`; never commit
   with a real name or address.
 - Workflow `.github/workflows/pages.yml` ("Build and deploy") runs `fetch.py`
-  on a schedule (every 2 hours, `0 */2 * * *` UTC), on push to `main`, and by
+  on a schedule (every 2 hours at :17, `17 */2 * * *` UTC; on-the-hour crons
+  were delayed by up to 7h on GitHub's shared scheduler), on push to `main`, and by
   `workflow_dispatch`. First run from a GitHub runner: 14 prices, 150
   headlines, 0 errors, 7s.
 - `fetch.py` pulls prices and RSS headlines from public endpoints. **No AI, no

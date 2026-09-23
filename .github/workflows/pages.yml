@@ -4,7 +4,7 @@ name: Build and deploy
 
 on:
   schedule:
-    - cron: "0 */2 * * *"   # every 2 hours, UTC
+    - cron: "17 */2 * * *"  # every 2 hours at :17 UTC (off-peak minute; on-the-hour crons get delayed for hours)
   push:
     branches: [main]
   workflow_dispatch:
