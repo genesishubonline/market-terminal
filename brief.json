@@ -1,100 +1,99 @@
 {
-  "date": "2026-09-22",
-  "headline": "Nasdaq hits a record as 'AI FOMO' returns",
-  "headline_url": "https://www.ft.com/content/2c60812b-77b4-4de5-a276-5e3eb2ceb5c3?syn-25a6b1a6=1",
-  "headline_source": "FT Technology",
-  "lead": "AI names drove the Nasdaq to a fresh record while oil, volatility and bond yields eased, a broad risk-on tape that also lifted crypto.",
+  "date": "2026-09-23",
+  "headline": "OECD warns of faster inflation, sees Fed, ECB and BOJ hiking",
+  "headline_url": "https://www.bloomberg.com/news/articles/2026-09-23/oecd-warns-of-faster-global-inflation-sees-rate-hikes-at-fed-ecb-boj",
+  "headline_source": "Bloomberg Economics",
+  "lead": "Yields near 5%, the dollar at a one-week high and mortgage rates above 7% show markets pricing a longer tightening cycle.",
   "chart": {
     "series": [
-      "IXIC",
-      "BTC"
+      "US10Y"
     ],
-    "title": "Nasdaq vs Bitcoin, 7-day % change",
-    "note": "Risk-on in both: Nasdaq +4.5%, BTC +13.4% on the week",
+    "title": "US 10Y yield pinned near 5%",
+    "note": "Range 4.94-5.01% all week; hike bets keep a floor under yields",
     "mark": {
-      "t": "2026-09-22T20:00:00Z",
-      "label": "Nasdaq record"
+      "t": "2026-09-16T18:00:00Z",
+      "label": "FOMC statement"
     }
   },
   "points": [
     {
-      "title": "利上げでも円安、157円台",
-      "detail": "日銀は18日に政策金利を1.25%へ引き上げたが、ドル円は157.62円と週間で2.07%上昇し、市場は追加利上げの遅さを織り込んでいる。",
+      "title": "円157円台、介入警戒強まる",
+      "detail": "ドル円は157.81円と7日間で2.2%の円安、7日高値157.88円に迫り、日銀利上げ後も円売りが止まらない。",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTldhRkUwNUZxSHZzeFU5cjdKYmY2bUdFVnNUUDlTVUtQUk10bXp0cjJjMnRzN0IxbXE2Sy1vVk1lOUtNazIzaVlTeTdncVVEaERPbjZvam55ajBwZkt1RDV2NEstcW9teEpYSkpSb21sMkgwaV9HMzVEMWEycnQ5ejlURDBxZVE?oc=5",
       "source": "japantimes.co.jp"
     },
     {
-      "title": "Bitcoin bull run resumes on ETF flows",
-      "detail": "BTC trades at $86,460, up 13.45% on the week, as nearly $1B flowed into spot ETFs; SOL led majors with a 20.26% gain.",
-      "url": "https://bitcoinmagazine.com/news/bitcoin-etf-investors-buy-nearly-1-billion",
-      "source": "Bitcoin Magazine"
+      "title": "Oil slide cools inflation fear, VIX sinks",
+      "detail": "WTI dropped 5% to $89.87, down 14% over seven days, while the VIX fell to 14.17, its lowest of the week.",
+      "url": "https://www.ft.com/content/0a5a5b70-adea-40af-9933-1f7679f9f359?syn-25a6b1a6=1",
+      "source": "FT Markets"
     },
     {
-      "title": "Oil sinks below $100 on Hormuz offer",
-      "detail": "WTI fell 13.08% over seven days to $89.73 after reports Iran offered to reopen Hormuz, dragging the VIX down 19.9% to 14.21.",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB0d0hCaE5KX0EtVGFnbzR3MXR1WDQtTFFqR1FhQms4YlpxZVM3QWZoeE5OX0dzWlRWbU1aWXVYcFVneVlVLXVXamlBeXpwUUJGeHFsMWI2UGFIRllVakJnMjYyRWRFcmNZMl9ST1hzUzhUaVYwSHBadw?oc=5",
-      "source": "barrons.com"
+      "title": "Bitcoin rally meets $16B options test",
+      "detail": "BTC is flat at $85,934 after a 12.5% weekly gain, with $16 billion of options expiring Friday and $90K flagged as profit-taking territory.",
+      "url": "https://cryptoslate.com/bitcoin-faces-16-billion-options-expiry-friday-then-two-more-tests-hit-the-rally/",
+      "source": "CryptoSlate"
     }
   ],
   "knowledge": {
-    "title_en": "High-Yield Spreads: Reading a 10% Coupon",
-    "body_en": "A corporate bond's yield is the risk-free rate plus a spread. The spread is the market's price for default and liquidity risk. With the US 10-year near 5%, a coupon around 10% implies a spread of roughly 500 basis points, squarely in high-yield territory (rated below BBB-). Spreads widen when investors fear defaults and tighten when they chase yield.\n\nOrder books tell the other half of the story. Demand at twice the issue size means investors will fund aggressive AI capex at that price, even as better-rated AI issuers lean on convertibles instead. Watch whether spreads stay tight as issuance grows; widening would be the first sign the AI financing cycle is cooling.",
-    "why_en": "SoftBank's jumbo junk bond, reportedly priced near 10% against a 4.97% Treasury, is the clearest live read on AI-capex financing risk.",
+    "title_en": "The Mortgage Spread: Why 7% Mortgages Sit on a 5% Treasury",
+    "body_en": "A 30-year US mortgage rate is not set by the Fed. It is priced off the 10-year Treasury yield plus a spread that compensates investors in mortgage-backed securities for two risks: the borrower may refinance early when rates fall (prepayment risk), or hold on far longer when rates rise (extension risk). Lenders add their own margin on top.\n\nThe spread is not constant. It widens when rate volatility is high, when the Fed stops buying MBS, or when banks pull back from holding them. That is why mortgage rates can climb faster than Treasuries in a tightening cycle, and why a 7% mortgage can coexist with a 5% ten-year.",
+    "why_en": "With the 10-year near 4.97% and 30-year mortgages back above 7%, the spread itself is a live gauge of how nervous rate markets are.",
     "facts": [
-      {
-        "label": "Reported coupon",
-        "value": "~10%"
-      },
-      {
-        "label": "Book vs issue size",
-        "value": "2x"
-      },
       {
         "label": "US 10Y yield",
         "value": "4.97%"
       },
       {
-        "label": "High-yield rating",
-        "value": "below BBB-"
+        "label": "30Y US mortgage",
+        "value": ">7%"
+      },
+      {
+        "label": "Long-run spread",
+        "value": "~1.7 pp"
+      },
+      {
+        "label": "Implied spread now",
+        "value": ">2 pp"
       }
     ],
     "sources": [
       {
-        "title": "SoftBank Starts Jumbo High-Yield Bond Sale to Finance AI Push",
-        "url": "https://www.bloomberg.com/news/articles/2026-09-23/softbank-starts-jumbo-high-yield-bond-sale-to-finance-ai-push"
+        "title": "US Mortgage Rates Surge Above 7% to a More Than Two-Year High",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-23/us-mortgage-rates-surge-above-7-to-a-more-than-two-year-high"
       },
       {
-        "title": "CoreWeave Completes $4.2 Billion Convertible Offering",
-        "url": "https://www.theinformation.com/briefings/coreweave-completes-4-2-billion-convertible-offering"
+        "title": "House prices survived the last interest-rate rise. Will they this time?",
+        "url": "https://www.economist.com/finance-and-economics/2026/09/20/house-prices-survived-the-last-interest-rate-rise-will-they-this-time"
       }
     ],
     "chart": {
       "series": [
         "US10Y"
       ],
-      "title": "US 10Y yield, 7 days",
-      "note": "Risk-free leg sits near 5%; the spread is the rest"
+      "title": "US 10Y yield, the base of the mortgage rate",
+      "note": "Add roughly 2 points of spread to read the mortgage market"
     }
   },
   "reading": [
     {
-      "title": "U.S. regulators rush to write crypto rulebook after Clarity Act stalls in Senate",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAtbDVaZHgwQXFCdG9fdXZDU0Q3dXN6YTM4d0xuVm8tQ3p1eTJEb0k4U1VkZ0hlTjBkdGV5MTNGWEhOMndzR1RiS1pxMUNuc0FEcUZMVXlzMkx4bzNRN0RScUVsNV9kQUtZd1psQ25obEVZNzlvT2FMZkI3X23SAYIBQVVfeXFMT3dmdTUwNnJ0eERJb2RWOElXbEdqclg3VzFZdWlZdWlzWEpDeFVCaEtQUmpOc0NMX1lVLWdFRVVNaVo1WGJEREU4cndydTZOSnBYZGpabmxpbERINzg4WE5vZ0VEWG1qM0IwNnlSUTM1R3VScTlvZi1YZ2pSV2F1WVJ6QQ?oc=5",
-      "source": "CNBC",
-      "why": "Where crypto rules go now that legislation has stalled"
+      "title": "Financial stocks are falling as rates rise. Why that’s a problem for the broader market.",
+      "url": "https://www.marketwatch.com/story/financial-stocks-are-falling-as-rates-rise-why-thats-a-problem-for-the-broader-market-70bd9b04?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "why": "Banks lagging while yields rise is a classic late-cycle warning"
     },
     {
       "title": "Data centres are straining the insurance market",
       "url": "https://www.economist.com/finance-and-economics/2026/09/22/data-centres-are-straining-the-insurance-market",
       "source": "The Economist",
-      "why": "An overlooked AI-capex bottleneck beyond chips and power"
+      "why": "An underrated bottleneck for the AI capex boom"
     },
     {
-      "title": "ソフトバンクGジャンク債に発行額2倍の需要、10%の金利も 米報道",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhaFBFeUJqcnN2NGhUNkEzSjdJZlZISDhRY2pZbkFZbFNMU3lKRTdKVGgxeGtuTVc4SjR1Xzk4c2xqbmlVWEJleEhETXNXOERJNzBmMzdHemFsMGI5Zy0yZmxkSUROQ2tPcnFyaA?oc=5",
-      "source": "日本経済新聞",
-      "why": "AI投資の資金調達コストを映す10%クーポン"
+      "title": "TOPIX銘柄選定ルール見直し 企業価値高める動き広がるか",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260923de52006",
+      "source": "NHK 経済",
+      "why": "TOPIX構成ルール変更が企業価値向上を促すか"
     }
   ],
-  "generated_at": "2026-09-23T03:16:37+00:00"
+  "generated_at": "2026-09-23T12:35:41+00:00"
 }
