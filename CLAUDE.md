@@ -37,6 +37,14 @@ Two independent pipelines feed one static site.
   and reading recommendations.
 - Output is `brief.json`, which `brief.py` commits and pushes to `main`.
 - `claude -p` uses the local Claude Code login. No API key is involved.
+- Automated on the Mac by launchd: `~/Library/LaunchAgents/com.bellblock.brief.plist`
+  (outside the repo, holds the user's paths) runs `scripts/run_brief.sh` daily
+  at 07:00 Mac local time; if the Mac was asleep it runs at next wake. The
+  wrapper pulls, runs `brief.py` (which commits + pushes with the user's own
+  git credentials), and logs to `~/Library/Logs/bell-block-brief.log`.
+  Manage with `launchctl kickstart gui/501/com.bellblock.brief` (run now),
+  `launchctl bootout gui/501/com.bellblock.brief` (disable). Only runs while
+  the Mac is on; that is the accepted trade-off for keeping AI out of CI.
 
 ### Site
 
@@ -76,6 +84,7 @@ Two independent pipelines feed one static site.
 | `make_icons.py`, `icons/` | yes | Pixel-robot home-screen icons (PNG 180/192/512 + SVG), generated without deps. Rerun after changing the mascot. |
 | `manifest.webmanifest` | yes | Web app manifest so the site installs to a phone home screen with the mascot icon. |
 | `brief.py` | yes | Build prompt from `profile.md` + `data.json`, run `claude -p`, validate, leak-check, write and push `brief.json`. Mac only. |
+| `scripts/run_brief.sh` | yes | launchd wrapper: pull, run `brief.py`, log. Generic paths; the plist that schedules it lives outside the repo. |
 | `.brief_state.json` | **no** | Past knowledge-card titles so topics don't repeat. Gitignored. |
 | `brief.json` | yes | Daily brief + reading recommendations. Public. |
 | `profile.md` | **no** | Personal context. Gitignored. Mac only. |
