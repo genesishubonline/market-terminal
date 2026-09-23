@@ -1,103 +1,100 @@
 {
-  "date": "2026-09-20",
-  "headline": "日銀利上げ後も円は一段安リスク、連休で流動性低下　レートチェック警戒続く",
-  "headline_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8zVTRFUFRxend0bG5rTWJwclhTdTdCcDRQNlgzTm1UVTdROUpQTTFTMWtwY0xoOEJURnlhVE1Lb2diS0ZnSFFZbUExck9ROXFVeFBaRjBKMzgydU1OVmgzSlVGdXJ0MUE2NjEwUnV0TTJYSWR0VGRR?oc=5",
-  "headline_source": "bloomberg.com",
-  "lead": "1.25%への利上げでも円安圧力は消えず、介入警戒とドル円157円台の攻防が今週の焦点となる。",
+  "date": "2026-09-22",
+  "headline": "Nasdaq hits a record as 'AI FOMO' returns",
+  "headline_url": "https://www.ft.com/content/2c60812b-77b4-4de5-a276-5e3eb2ceb5c3?syn-25a6b1a6=1",
+  "headline_source": "FT Technology",
+  "lead": "AI names drove the Nasdaq to a fresh record while oil, volatility and bond yields eased, a broad risk-on tape that also lifted crypto.",
   "chart": {
     "series": [
-      "USDJPY"
+      "IXIC",
+      "BTC"
     ],
-    "title": "ドル円 7日間：日銀利上げとレートチェック",
-    "note": "157.95円の高値後に急落、156円台後半で介入を警戒",
+    "title": "Nasdaq vs Bitcoin, 7-day % change",
+    "note": "Risk-on in both: Nasdaq +4.5%, BTC +13.4% on the week",
     "mark": {
-      "t": "2026-09-18T15:42:00Z",
-      "label": "レートチェック報道"
+      "t": "2026-09-22T20:00:00Z",
+      "label": "Nasdaq record"
     }
   },
   "points": [
     {
-      "title": "Fed hikes, Kashkari says inflation too high",
-      "detail": "The Fed's first hike in three years leaves the 10-year yield at 4.998%, up 1.6% on the week, keeping dollar support intact.",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQc1hVd3hZZmFPOEVudnRhdFpDczA0Qkg4TmxpeDFYN1NuWnFkYVNSLTdrRU42dGdXV21YcmlsM1RVREw1amRxQWV5aWVZZTRPRy1paTNiT2o3M0syblIxdkMtR2xKLVgzUEstZ01CcXRKd0dNbUpLZUxkV1hhS0cwcDZYRXdmYjJrTTc4RERBQWNyeXdHb0ZoVjhPMkQzVDJodDBoc3c0RTc4ckFJeGJ6WDlLTDVzM05rN3k5VWNXVVFlTWM?oc=5",
-      "source": "Reuters"
+      "title": "利上げでも円安、157円台",
+      "detail": "日銀は18日に政策金利を1.25%へ引き上げたが、ドル円は157.62円と週間で2.07%上昇し、市場は追加利上げの遅さを織り込んでいる。",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTldhRkUwNUZxSHZzeFU5cjdKYmY2bUdFVnNUUDlTVUtQUk10bXp0cjJjMnRzN0IxbXE2Sy1vVk1lOUtNazIzaVlTeTdncVVEaERPbjZvam55ajBwZkt1RDV2NEstcW9teEpYSkpSb21sMkgwaV9HMzVEMWEycnQ5ejlURDBxZVE?oc=5",
+      "source": "japantimes.co.jp"
     },
     {
-      "title": "Bitcoin holds $80K despite Clarity setback",
-      "detail": "BTC is up 4.67% over seven days to $81,661 and SOL 9.63%, as traders shrug off the Senate's failure to advance the Clarity Act.",
-      "url": "https://www.theblock.co/news/markets/2026-09-18-bitcoin-reclaims-80000-solana-hyperliquid-rally-crypto-markets-shrug-off-clarity-setback-415523",
-      "source": "The Block"
+      "title": "Bitcoin bull run resumes on ETF flows",
+      "detail": "BTC trades at $86,460, up 13.45% on the week, as nearly $1B flowed into spot ETFs; SOL led majors with a 20.26% gain.",
+      "url": "https://bitcoinmagazine.com/news/bitcoin-etf-investors-buy-nearly-1-billion",
+      "source": "Bitcoin Magazine"
     },
     {
-      "title": "SEC opens door to tokenized stocks",
-      "detail": "The SEC's innovation exemption lets tokenized NMS stock trade for five years outside standard rules, shifting crypto policy to regulators after Clarity died.",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
-      "source": "SEC Press Releases"
+      "title": "Oil sinks below $100 on Hormuz offer",
+      "detail": "WTI fell 13.08% over seven days to $89.73 after reports Iran offered to reopen Hormuz, dragging the VIX down 19.9% to 14.21.",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB0d0hCaE5KX0EtVGFnbzR3MXR1WDQtTFFqR1FhQms4YlpxZVM3QWZoeE5OX0dzWlRWbU1aWXVYcFVneVlVLXVXamlBeXpwUUJGeHFsMWI2UGFIRllVakJnMjYyRWRFcmNZMl9ST1hzUzhUaVYwSHBadw?oc=5",
+      "source": "barrons.com"
     }
   ],
   "knowledge": {
-    "title_en": "The Yen Carry Trade",
-    "title_ja": "円キャリー取引",
-    "body_en": "A carry trade borrows in a low-rate currency and invests in a higher-yielding one, pocketing the rate gap. The yen has been the classic funding currency because Japan's rates stayed far below those abroad, so investors sell yen to buy dollars, adding steady downward pressure on the currency.\n\nThe trade pays as long as the gap is wide and the yen does not rise sharply. A rate hike in Japan narrows the spread, but only slightly if US yields stay high. The real risk is a sudden yen rally: it forces carry positions to unwind at once, which is why intervention signals move the market so fast.",
-    "body_ja": "キャリー取引とは、低金利通貨で資金を借り、高金利通貨で運用して金利差を得る手法です。日本の金利が海外より大幅に低かったため、円は代表的な調達通貨となり、円売り・ドル買いが円安圧力を生み続けてきました。\n\n金利差が大きく円が急騰しなければ利益が出ます。日本の利上げで差は縮まりますが、米金利が高止まりすれば効果は限定的です。最大のリスクは円の急騰で、ポジションの一斉解消を招くため、介入シグナルに市場は敏感に反応します。",
-    "why_en": "The BOJ's hike to 1.25% still leaves a wide gap against a US 10-year near 5%, so carry pressure on the yen persists.",
-    "why_ja": "日銀が1.25%に利上げしても、5%近い米10年債利回りとの差は大きく、円へのキャリー圧力は続いています。",
+    "title_en": "High-Yield Spreads: Reading a 10% Coupon",
+    "body_en": "A corporate bond's yield is the risk-free rate plus a spread. The spread is the market's price for default and liquidity risk. With the US 10-year near 5%, a coupon around 10% implies a spread of roughly 500 basis points, squarely in high-yield territory (rated below BBB-). Spreads widen when investors fear defaults and tighten when they chase yield.\n\nOrder books tell the other half of the story. Demand at twice the issue size means investors will fund aggressive AI capex at that price, even as better-rated AI issuers lean on convertibles instead. Watch whether spreads stay tight as issuance grows; widening would be the first sign the AI financing cycle is cooling.",
+    "why_en": "SoftBank's jumbo junk bond, reportedly priced near 10% against a 4.97% Treasury, is the clearest live read on AI-capex financing risk.",
     "facts": [
       {
-        "label": "BOJ policy rate",
-        "value": "1.25%"
+        "label": "Reported coupon",
+        "value": "~10%"
+      },
+      {
+        "label": "Book vs issue size",
+        "value": "2x"
       },
       {
         "label": "US 10Y yield",
-        "value": "4.998%"
+        "value": "4.97%"
       },
       {
-        "label": "USD/JPY",
-        "value": "156.98"
-      },
-      {
-        "label": "USD/JPY 7d range",
-        "value": "153.4–157.9"
+        "label": "High-yield rating",
+        "value": "below BBB-"
       }
     ],
     "sources": [
       {
-        "title": "日銀が「レートチェック」を実施 円安けん制か",
-        "url": "https://news.web.nhk/newsweb/na/nd-20260919de51169"
+        "title": "SoftBank Starts Jumbo High-Yield Bond Sale to Finance AI Push",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-23/softbank-starts-jumbo-high-yield-bond-sale-to-finance-ai-push"
       },
       {
-        "title": "日銀1.25%に利上げ 「追加利上げも試行錯誤」市場関係者の見方",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhSXRibENkQTM0TDFaTGlteHJjaHhGcGNvR25TTzVlSU9FMHI5enFCeGx6U3lRQTRuQUJOVFI5X3pGZTBjRms1NU82UFFyMTVlV3FHYURRYlBFY1FkMzZiYnVkbWtyOEo0a1pQVQ?oc=5"
+        "title": "CoreWeave Completes $4.2 Billion Convertible Offering",
+        "url": "https://www.theinformation.com/briefings/coreweave-completes-4-2-billion-convertible-offering"
       }
     ],
     "chart": {
       "series": [
-        "USDJPY",
         "US10Y"
       ],
-      "title": "USD/JPY vs US 10Y, 7 days (rebased)",
-      "note": "Yen weakens as US yields climb toward 5%"
+      "title": "US 10Y yield, 7 days",
+      "note": "Risk-free leg sits near 5%; the spread is the rest"
     }
   },
   "reading": [
     {
-      "title": "Big Tech uses guarantees to keep $300bn AI exposure off balance sheets",
-      "url": "https://www.ft.com/content/7f11afae-c4e3-4054-a65b-873f3647f563?syn-25a6b1a6=1",
-      "source": "FT Markets",
-      "why": "How AI capex risk hides off balance sheet"
+      "title": "U.S. regulators rush to write crypto rulebook after Clarity Act stalls in Senate",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAtbDVaZHgwQXFCdG9fdXZDU0Q3dXN6YTM4d0xuVm8tQ3p1eTJEb0k4U1VkZ0hlTjBkdGV5MTNGWEhOMndzR1RiS1pxMUNuc0FEcUZMVXlzMkx4bzNRN0RScUVsNV9kQUtZd1psQ25obEVZNzlvT2FMZkI3X23SAYIBQVVfeXFMT3dmdTUwNnJ0eERJb2RWOElXbEdqclg3VzFZdWlZdWlzWEpDeFVCaEtQUmpOc0NMX1lVLWdFRVVNaVo1WGJEREU4cndydTZOSnBYZGpabmxpbERINzg4WE5vZ0VEWG1qM0IwNnlSUTM1R3VScTlvZi1YZ2pSV2F1WVJ6QQ?oc=5",
+      "source": "CNBC",
+      "why": "Where crypto rules go now that legislation has stalled"
     },
     {
-      "title": "Bitcoin's Sharpest Rally in Two Years Ran Almost Entirely on Short Liquidations",
-      "url": "https://decrypt.co/378686/bitcoin-sharpest-rally-two-years-short-liquidations",
-      "source": "Decrypt",
-      "why": "Mechanics behind this week's BTC squeeze"
+      "title": "Data centres are straining the insurance market",
+      "url": "https://www.economist.com/finance-and-economics/2026/09/22/data-centres-are-straining-the-insurance-market",
+      "source": "The Economist",
+      "why": "An overlooked AI-capex bottleneck beyond chips and power"
     },
     {
-      "title": "日米欧「半世紀ぶり」同時利上げ 中銀悩ますインフレ・政治・AI",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB4X25LRktYanpvS01UOEY4ZUxONFMxQ1ZQbk5rR2NhVno1TVlrWUtRa1ZZWk5kcGdaVkxQSjNpMkVaUFIwUmxYMzRYZHdIWk1EcThpNHlYT3gzSlVoYm5EZ3c3a1pvdzBHVndlXw?oc=5",
-      "source": "日経 政治",
-      "why": "半世紀ぶりの同時利上げの背景を整理"
+      "title": "ソフトバンクGジャンク債に発行額2倍の需要、10%の金利も 米報道",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhaFBFeUJqcnN2NGhUNkEzSjdJZlZISDhRY2pZbkFZbFNMU3lKRTdKVGgxeGtuTVc4SjR1Xzk4c2xqbmlVWEJleEhETXNXOERJNzBmMzdHemFsMGI5Zy0yZmxkSUROQ2tPcnFyaA?oc=5",
+      "source": "日本経済新聞",
+      "why": "AI投資の資金調達コストを映す10%クーポン"
     }
   ],
-  "generated_at": "2026-09-21T00:43:44+00:00"
+  "generated_at": "2026-09-23T03:16:37+00:00"
 }
