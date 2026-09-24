@@ -1,99 +1,97 @@
 {
-  "date": "2026-09-23",
-  "headline": "OECD warns of faster inflation, sees Fed, ECB and BOJ hiking",
-  "headline_url": "https://www.bloomberg.com/news/articles/2026-09-23/oecd-warns-of-faster-global-inflation-sees-rate-hikes-at-fed-ecb-boj",
-  "headline_source": "Bloomberg Economics",
-  "lead": "Yields near 5%, the dollar at a one-week high and mortgage rates above 7% show markets pricing a longer tightening cycle.",
+  "date": "2026-09-24",
+  "headline": "US 30-year yield hits highest since 2004 as bond selloff deepens",
+  "headline_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOG41MExjN21pM3Z3V2JFMGkydXNYQW5YSEFfbTd2N2pOenR6R3pKQ0ZVWnVQZElXXzdBSXNLdTl4Q0ZPMzItVkIzR3hWNjZrMUNRZzJsa2xYQVNvQ1h2REJuNW1HTGpCb2lsdjdyWkZacjV6NnI1aHA4Y2JFN0sxYm5TYlBTSkhGWkd6b2dWaWNpbTVHYkhWb0lnNFo1al9scmVqT0tXZkh5ZFU?oc=5",
+  "headline_source": "Reuters",
+  "lead": "Long-end yields at two-decade highs are pulling stocks and bitcoin lower and pushing the yen to 158.77 as oil rekindles inflation fears.",
   "chart": {
     "series": [
       "US10Y"
     ],
-    "title": "US 10Y yield pinned near 5%",
-    "note": "Range 4.94-5.01% all week; hike bets keep a floor under yields",
+    "title": "US 10Y yield, last 7 days",
+    "note": "10Y at 5.11%, near the 7d high of 5.13%; 30Y at a 2004 high",
     "mark": {
-      "t": "2026-09-16T18:00:00Z",
-      "label": "FOMC statement"
+      "t": "2026-09-23T18:20:00Z",
+      "label": "30Y at 2004 high"
     }
   },
   "points": [
     {
-      "title": "円157円台、介入警戒強まる",
-      "detail": "ドル円は157.81円と7日間で2.2%の円安、7日高値157.88円に迫り、日銀利上げ後も円売りが止まらない。",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTldhRkUwNUZxSHZzeFU5cjdKYmY2bUdFVnNUUDlTVUtQUk10bXp0cjJjMnRzN0IxbXE2Sy1vVk1lOUtNazIzaVlTeTdncVVEaERPbjZvam55ajBwZkt1RDV2NEstcW9teEpYSkpSb21sMkgwaV9HMzVEMWEycnQ5ejlURDBxZVE?oc=5",
-      "source": "japantimes.co.jp"
+      "title": "円安加速、158円台後半に",
+      "detail": "ドル円は0.83%高の158.77円と7日高値を更新。世界的な国債売りに加え、「つなぎ国債」頼みの予算編成で償還財源が見えず、円売り圧力が続く。"
     },
     {
-      "title": "Oil slide cools inflation fear, VIX sinks",
-      "detail": "WTI dropped 5% to $89.87, down 14% over seven days, while the VIX fell to 14.17, its lowest of the week.",
-      "url": "https://www.ft.com/content/0a5a5b70-adea-40af-9933-1f7679f9f359?syn-25a6b1a6=1",
-      "source": "FT Markets"
+      "title": "Market prices four Fed hikes",
+      "detail": "Bitcoin fell 2.35% to $83,551 as futures priced four Fed hikes by June 2027, though BTC is still up 9.17% on the week.",
+      "url": "https://www.coindesk.com/markets/2026/09/24/traders-are-pricing-in-4-fed-rate-hikes-as-bitcoin-slides-below-usd83-000",
+      "source": "CoinDesk Policy"
     },
     {
-      "title": "Bitcoin rally meets $16B options test",
-      "detail": "BTC is flat at $85,934 after a 12.5% weekly gain, with $16 billion of options expiring Friday and $90K flagged as profit-taking territory.",
-      "url": "https://cryptoslate.com/bitcoin-faces-16-billion-options-expiry-friday-then-two-more-tests-hit-the-rally/",
-      "source": "CryptoSlate"
+      "title": "SoftBank's $11bn junk bond for OpenAI",
+      "detail": "SoftBank raised a record $11bn in junk bonds to fund its OpenAI stake, testing appetite for AI credit with the 10-year Treasury at 5.11%.",
+      "url": "https://www.ft.com/content/17b09993-8fed-47d1-9c04-e2d29ca75615?syn-25a6b1a6=1",
+      "source": "FT Technology"
     }
   ],
   "knowledge": {
-    "title_en": "The Mortgage Spread: Why 7% Mortgages Sit on a 5% Treasury",
-    "body_en": "A 30-year US mortgage rate is not set by the Fed. It is priced off the 10-year Treasury yield plus a spread that compensates investors in mortgage-backed securities for two risks: the borrower may refinance early when rates fall (prepayment risk), or hold on far longer when rates rise (extension risk). Lenders add their own margin on top.\n\nThe spread is not constant. It widens when rate volatility is high, when the Fed stops buying MBS, or when banks pull back from holding them. That is why mortgage rates can climb faster than Treasuries in a tightening cycle, and why a 7% mortgage can coexist with a 5% ten-year.",
-    "why_en": "With the 10-year near 4.97% and 30-year mortgages back above 7%, the spread itself is a live gauge of how nervous rate markets are.",
+    "title_en": "Term Premium: Why the Long End Sells Off Harder",
+    "body_en": "A long-term bond yield has two parts: the average short-term rate investors expect over the bond's life, and the term premium, the extra yield demanded for holding duration risk. The premium rises when inflation is uncertain, when fiscal deficits swell the supply of long bonds, or when the buyer base thins.\n\nWhen long yields climb faster than short ones, a bear steepener, the move usually signals a rising term premium rather than a shifting Fed path. That is harder for a central bank to fix, because it reflects trust in fiscal and inflation control, not just expected policy.",
+    "why_en": "A 30-year yield at a 2004 high alongside four priced Fed hikes suggests both parts are rising, with oil driving the inflation risk.",
     "facts": [
       {
         "label": "US 10Y yield",
-        "value": "4.97%"
+        "value": "5.11%"
       },
       {
-        "label": "30Y US mortgage",
-        "value": ">7%"
+        "label": "10Y 7d range",
+        "value": "4.94-5.13%"
       },
       {
-        "label": "Long-run spread",
-        "value": "~1.7 pp"
+        "label": "US 30Y yield",
+        "value": "2004 high"
       },
       {
-        "label": "Implied spread now",
-        "value": ">2 pp"
+        "label": "Fed hikes priced",
+        "value": "4 by Jun-27"
       }
     ],
     "sources": [
       {
-        "title": "US Mortgage Rates Surge Above 7% to a More Than Two-Year High",
-        "url": "https://www.bloomberg.com/news/articles/2026-09-23/us-mortgage-rates-surge-above-7-to-a-more-than-two-year-high"
+        "title": "US 30-year bond yield rises to highest since 2004 as selloff deepens",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOG41MExjN21pM3Z3V2JFMGkydXNYQW5YSEFfbTd2N2pOenR6R3pKQ0ZVWnVQZElXXzdBSXNLdTl4Q0ZPMzItVkIzR3hWNjZrMUNRZzJsa2xYQVNvQ1h2REJuNW1HTGpCb2lsdjdyWkZacjV6NnI1aHA4Y2JFN0sxYm5TYlBTSkhGWkd6b2dWaWNpbTVHYkhWb0lnNFo1al9scmVqT0tXZkh5ZFU?oc=5"
       },
       {
-        "title": "House prices survived the last interest-rate rise. Will they this time?",
-        "url": "https://www.economist.com/finance-and-economics/2026/09/20/house-prices-survived-the-last-interest-rate-rise-will-they-this-time"
+        "title": "As Bessent Tinkers With Treasuries, a Warning Against ‘Financial Engineering’",
+        "url": "https://www.bloomberg.com/news/newsletters/2026-09-24/as-bessent-tinkers-with-treasuries-a-warning-against-financial-engineering"
       }
     ],
     "chart": {
       "series": [
         "US10Y"
       ],
-      "title": "US 10Y yield, the base of the mortgage rate",
-      "note": "Add roughly 2 points of spread to read the mortgage market"
+      "title": "US 10Y yield: a bear-steepening week",
+      "note": "Yield rose from 4.94% to 5.11% in seven sessions"
     }
   },
   "reading": [
     {
-      "title": "Financial stocks are falling as rates rise. Why that’s a problem for the broader market.",
-      "url": "https://www.marketwatch.com/story/financial-stocks-are-falling-as-rates-rise-why-thats-a-problem-for-the-broader-market-70bd9b04?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "why": "Banks lagging while yields rise is a classic late-cycle warning"
+      "title": "As Bessent Tinkers With Treasuries, a Warning Against ‘Financial Engineering’",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-09-24/as-bessent-tinkers-with-treasuries-a-warning-against-financial-engineering",
+      "source": "Bloomberg Economics",
+      "why": "How Treasury issuance choices feed the term premium"
     },
     {
-      "title": "Data centres are straining the insurance market",
-      "url": "https://www.economist.com/finance-and-economics/2026/09/22/data-centres-are-straining-the-insurance-market",
-      "source": "The Economist",
-      "why": "An underrated bottleneck for the AI capex boom"
+      "title": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "url": "https://www.theinformation.com/articles/deepseeks-annualized-revenue-hits-1-billion-startup-finalizes-7-5-billion-fundraising",
+      "source": "The Information",
+      "why": "China's AI challenger reaches scale at discount pricing"
     },
     {
-      "title": "TOPIX銘柄選定ルール見直し 企業価値高める動き広がるか",
-      "url": "https://news.web.nhk/newsweb/na/nd-20260923de52006",
-      "source": "NHK 経済",
-      "why": "TOPIX構成ルール変更が企業価値向上を促すか"
+      "title": "EU banking watchdog calls for crypto lending rules under MiCA",
+      "url": "https://cointelegraph.com/news/eu-eba-crypto-lending-defi-mica-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "why": "Next front in European crypto rulemaking"
     }
   ],
-  "generated_at": "2026-09-23T12:35:41+00:00"
+  "generated_at": "2026-09-24T12:52:54+00:00"
 }
