@@ -1,97 +1,86 @@
 {
-  "date": "2026-09-24",
-  "headline": "US 30-year yield hits highest since 2004 as bond selloff deepens",
-  "headline_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOG41MExjN21pM3Z3V2JFMGkydXNYQW5YSEFfbTd2N2pOenR6R3pKQ0ZVWnVQZElXXzdBSXNLdTl4Q0ZPMzItVkIzR3hWNjZrMUNRZzJsa2xYQVNvQ1h2REJuNW1HTGpCb2lsdjdyWkZacjV6NnI1aHA4Y2JFN0sxYm5TYlBTSkhGWkd6b2dWaWNpbTVHYkhWb0lnNFo1al9scmVqT0tXZkh5ZFU?oc=5",
-  "headline_source": "Reuters",
-  "lead": "Long-end yields at two-decade highs are pulling stocks and bitcoin lower and pushing the yen to 158.77 as oil rekindles inflation fears.",
+  "date": "2026-09-25",
+  "headline": "トランプ氏、高市首相との会談で円安に言及 片山財務相が明かす",
+  "headline_url": "https://www.ft.com/content/901ccfbc-6ddb-4fb3-b74d-1f337efca9ff?syn-25a6b1a6=1",
+  "headline_source": "FT Markets",
+  "lead": "米側が円安を問題視したとの発言でドル円は157.7円まで下落し、介入への警戒感が市場に広がった。",
   "chart": {
     "series": [
-      "US10Y"
+      "USDJPY"
     ],
-    "title": "US 10Y yield, last 7 days",
-    "note": "10Y at 5.11%, near the 7d high of 5.13%; 30Y at a 2004 high",
+    "title": "ドル円 直近7日間",
+    "note": "158.92円の高値から反落、米側の円安言及で円買いが強まる",
     "mark": {
-      "t": "2026-09-23T18:20:00Z",
-      "label": "30Y at 2004 high"
+      "t": "2026-09-25T02:20:00Z",
+      "label": "片山財務相発言"
     }
   },
   "points": [
     {
-      "title": "円安加速、158円台後半に",
-      "detail": "ドル円は0.83%高の158.77円と7日高値を更新。世界的な国債売りに加え、「つなぎ国債」頼みの予算編成で償還財源が見えず、円売り圧力が続く。"
+      "title": "Oil slide gives bonds a breather",
+      "detail": "WTI is down 7.9% on the week to $92.99, easing the global bond selloff even though the US 10-year still sits at a 7-day high of 5.16%.",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-24/stock-market-today-dow-s-p-live-updates",
+      "source": "Bloomberg Markets"
     },
     {
-      "title": "Market prices four Fed hikes",
-      "detail": "Bitcoin fell 2.35% to $83,551 as futures priced four Fed hikes by June 2027, though BTC is still up 9.17% on the week.",
-      "url": "https://www.coindesk.com/markets/2026/09/24/traders-are-pricing-in-4-fed-rate-hikes-as-bitcoin-slides-below-usd83-000",
-      "source": "CoinDesk Policy"
+      "title": "Bitget hack tests exchange safety nets",
+      "detail": "A $352M North Korea-linked breach could drain 76% of Bitget's protection fund, yet BTC held near $84,778 and SOL gained 5.3% in 24 hours.",
+      "url": "https://cryptoslate.com/bitgets-north-korea-linked-352-million-hack-could-drain-76-of-its-protection-fund/",
+      "source": "CryptoSlate"
     },
     {
-      "title": "SoftBank's $11bn junk bond for OpenAI",
-      "detail": "SoftBank raised a record $11bn in junk bonds to fund its OpenAI stake, testing appetite for AI credit with the 10-year Treasury at 5.11%.",
-      "url": "https://www.ft.com/content/17b09993-8fed-47d1-9c04-e2d29ca75615?syn-25a6b1a6=1",
-      "source": "FT Technology"
+      "title": "Fed drafts stablecoin issuer rulebook",
+      "detail": "Two proposals under the 2025 GENIUS Act set reserve limits and capital standards for Fed-supervised payment stablecoin issuers, now open for public comment.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "source": "Federal Reserve"
     }
   ],
   "knowledge": {
-    "title_en": "Term Premium: Why the Long End Sells Off Harder",
-    "body_en": "A long-term bond yield has two parts: the average short-term rate investors expect over the bond's life, and the term premium, the extra yield demanded for holding duration risk. The premium rises when inflation is uncertain, when fiscal deficits swell the supply of long bonds, or when the buyer base thins.\n\nWhen long yields climb faster than short ones, a bear steepener, the move usually signals a rising term premium rather than a shifting Fed path. That is harder for a central bank to fix, because it reflects trust in fiscal and inflation control, not just expected policy.",
-    "why_en": "A 30-year yield at a 2004 high alongside four priced Fed hikes suggests both parts are rising, with oil driving the inflation risk.",
+    "title_en": "Stablecoin Reserves vs Capital Under the GENIUS Act",
+    "body_en": "The GENIUS Act, signed in July 2025, created the first US federal license for payment stablecoins. Issuers must hold reserves of at least 1:1 in cash, insured deposits, short Treasury bills or Treasury repo, disclose them monthly, and may not pay interest to holders. Issuers above $10 billion outstanding move from state to federal supervision.\n\nThe Fed's two proposals fill in what the statute left open: how much capital an issuer needs on top of reserves, and limits on what the reserves may contain. Reserves back the coins; capital absorbs losses when reserves slip below par, for example if a bank holding deposits fails. That gap is what broke stablecoin pegs in 2023.",
+    "why_en": "The Fed's proposals set the rulebook that Tether, Circle and any bank entrant must meet to issue payment stablecoins in the US.",
     "facts": [
       {
-        "label": "US 10Y yield",
-        "value": "5.11%"
+        "label": "GENIUS Act signed",
+        "value": "Jul 2025"
       },
       {
-        "label": "10Y 7d range",
-        "value": "4.94-5.13%"
+        "label": "Reserve backing",
+        "value": "1:1"
       },
       {
-        "label": "US 30Y yield",
-        "value": "2004 high"
+        "label": "T-bill max maturity",
+        "value": "93 days"
       },
       {
-        "label": "Fed hikes priced",
-        "value": "4 by Jun-27"
+        "label": "Federal threshold",
+        "value": "$10B"
       }
     ],
     "sources": [
       {
-        "title": "US 30-year bond yield rises to highest since 2004 as selloff deepens",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOG41MExjN21pM3Z3V2JFMGkydXNYQW5YSEFfbTd2N2pOenR6R3pKQ0ZVWnVQZElXXzdBSXNLdTl4Q0ZPMzItVkIzR3hWNjZrMUNRZzJsa2xYQVNvQ1h2REJuNW1HTGpCb2lsdjdyWkZacjV6NnI1aHA4Y2JFN0sxYm5TYlBTSkhGWkd6b2dWaWNpbTVHYkhWb0lnNFo1al9scmVqT0tXZkh5ZFU?oc=5"
+        "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
       },
       {
-        "title": "As Bessent Tinkers With Treasuries, a Warning Against ‘Financial Engineering’",
-        "url": "https://www.bloomberg.com/news/newsletters/2026-09-24/as-bessent-tinkers-with-treasuries-a-warning-against-financial-engineering"
+        "title": "Fed proposes reserve limits, capital standards for stablecoin issuers under GENIUS Act",
+        "url": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336"
       }
-    ],
-    "chart": {
-      "series": [
-        "US10Y"
-      ],
-      "title": "US 10Y yield: a bear-steepening week",
-      "note": "Yield rose from 4.94% to 5.11% in seven sessions"
-    }
+    ]
   },
   "reading": [
     {
-      "title": "As Bessent Tinkers With Treasuries, a Warning Against ‘Financial Engineering’",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-09-24/as-bessent-tinkers-with-treasuries-a-warning-against-financial-engineering",
-      "source": "Bloomberg Economics",
-      "why": "How Treasury issuance choices feed the term premium"
+      "title": "日経平均850円高 金利高はねのけ5連騰､「米中友好」AI加速に安堵感",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tdmc3MDZGeEl4RmxwTmRvUk15MDcxSHhfX3c4ZDIxcVNSMmFVbE9hUlBURTU3RjZsaDQ2YWJtaVNSajJ4MmdCaHlfM29LWDU3QnRNOHRablYwakhIWEtwUmt5S1FEdC1QUk1HQw?oc=5",
+      "source": "日経 経済",
+      "why": "AI・半導体主導で日経平均が高値圏で5連騰"
     },
     {
-      "title": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
-      "url": "https://www.theinformation.com/articles/deepseeks-annualized-revenue-hits-1-billion-startup-finalizes-7-5-billion-fundraising",
-      "source": "The Information",
-      "why": "China's AI challenger reaches scale at discount pricing"
-    },
-    {
-      "title": "EU banking watchdog calls for crypto lending rules under MiCA",
-      "url": "https://cointelegraph.com/news/eu-eba-crypto-lending-defi-mica-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "why": "Next front in European crypto rulemaking"
+      "title": "Rising Interest Rates Are Causing Alarm. Here’s What to Know.",
+      "url": "https://www.nytimes.com/2026/09/25/business/interest-rates-economy-markets-inflation-mortgages.html",
+      "source": "NYT Business",
+      "why": "Plain-English map of the 5% Treasury world"
     }
   ],
-  "generated_at": "2026-09-24T12:52:54+00:00"
+  "generated_at": "2026-09-25T12:50:37+00:00"
 }
