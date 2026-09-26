@@ -1,86 +1,96 @@
 {
-  "date": "2026-09-25",
-  "headline": "トランプ氏、高市首相との会談で円安に言及 片山財務相が明かす",
-  "headline_url": "https://www.ft.com/content/901ccfbc-6ddb-4fb3-b74d-1f337efca9ff?syn-25a6b1a6=1",
-  "headline_source": "FT Markets",
-  "lead": "米側が円安を問題視したとの発言でドル円は157.7円まで下落し、介入への警戒感が市場に広がった。",
+  "date": "2026-09-26",
+  "headline": "円が156円台へ反発、日米財務相協議で介入警戒強まる",
+  "headline_url": "https://news.web.nhk/newsweb/na/nd-20260926de52516",
+  "headline_source": "NHK 経済",
+  "lead": "ドル円は1日で2円超下落し157.18円、円の過小評価を日米が再確認したことで介入リスクが再び意識される。",
   "chart": {
     "series": [
       "USDJPY"
     ],
-    "title": "ドル円 直近7日間",
-    "note": "158.92円の高値から反落、米側の円安言及で円買いが強まる",
+    "title": "ドル円 7日間の推移",
+    "note": "158.81円の高値から財務相協議を機に反落、157円台へ",
     "mark": {
-      "t": "2026-09-25T02:20:00Z",
-      "label": "片山財務相発言"
+      "t": "2026-09-25T14:51:00+00:00",
+      "label": "日米財務相協議"
     }
   },
   "points": [
     {
-      "title": "Oil slide gives bonds a breather",
-      "detail": "WTI is down 7.9% on the week to $92.99, easing the global bond selloff even though the US 10-year still sits at a 7-day high of 5.16%.",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-24/stock-market-today-dow-s-p-live-updates",
-      "source": "Bloomberg Markets"
+      "title": "日経平均5日続伸、66,364円",
+      "detail": "半導体関連と銀行株がけん引し前日比1.3%高、中間配当の権利取りも追い風となり節目の66,000円台を回復した。",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRbE5ENHp3ZlJpREY1RGR1TnN5ZmJmYlJJX09uRmk1NlVqQlg0Ri1VM2J3V2NXMk9aOGxPMkZ0TU4tTlpic0pZaFdLSFZITmVxd09PN1FUY21NcEF2TkYzVFpuLVA1N2dRd1oxdQ?oc=5",
+      "source": "日本経済新聞"
     },
     {
-      "title": "Bitget hack tests exchange safety nets",
-      "detail": "A $352M North Korea-linked breach could drain 76% of Bitget's protection fund, yet BTC held near $84,778 and SOL gained 5.3% in 24 hours.",
-      "url": "https://cryptoslate.com/bitgets-north-korea-linked-352-million-hack-could-drain-76-of-its-protection-fund/",
-      "source": "CryptoSlate"
+      "title": "Ten-year Treasury holds above 5%",
+      "detail": "The 10-year yield sits at 5.18%, up 4.8% on the week, as Cleveland Fed's Hammack ties it to growth, debt supply and the rate path.",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-25/fed-s-hammack-says-yields-reflect-growth-us-debt-and-rate-path",
+      "source": "Bloomberg Economics"
     },
     {
-      "title": "Fed drafts stablecoin issuer rulebook",
-      "detail": "Two proposals under the 2025 GENIUS Act set reserve limits and capital standards for Fed-supervised payment stablecoin issuers, now open for public comment.",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
-      "source": "Federal Reserve"
+      "title": "Bitcoin ETFs pull in nearly $3B",
+      "detail": "Spot ETF inflows extended their streak while BTC held $84,161, up 3.5% over seven days despite a 0.6% daily dip.",
+      "url": "https://bitcoinmagazine.com/news/bitcoin-etfs-bring-in-nearly-3-billion",
+      "source": "Bitcoin Magazine"
     }
   ],
   "knowledge": {
-    "title_en": "Stablecoin Reserves vs Capital Under the GENIUS Act",
-    "body_en": "The GENIUS Act, signed in July 2025, created the first US federal license for payment stablecoins. Issuers must hold reserves of at least 1:1 in cash, insured deposits, short Treasury bills or Treasury repo, disclose them monthly, and may not pay interest to holders. Issuers above $10 billion outstanding move from state to federal supervision.\n\nThe Fed's two proposals fill in what the statute left open: how much capital an issuer needs on top of reserves, and limits on what the reserves may contain. Reserves back the coins; capital absorbs losses when reserves slip below par, for example if a bank holding deposits fails. That gap is what broke stablecoin pegs in 2023.",
-    "why_en": "The Fed's proposals set the rulebook that Tether, Circle and any bank entrant must meet to issue payment stablecoins in the US.",
+    "title_en": "Kenri-tori: Japan's Late-September Dividend Bid",
+    "body_en": "Most Japanese companies close their fiscal year on March 31 and pay an interim dividend with a September 30 record date. To be on the register you must own the shares by the ex-dividend day, one business day earlier under T+2 settlement, so September 29 this year. Buying ahead of that cutoff is called kenri-tori, taking the right.\n\nThe effect is a mechanical bid in the last week of September, especially in high-yield banks, trading houses and utilities, followed by an ex-dividend drop roughly equal to the payout. Index futures price this in, so cash-versus-futures basis widens briefly. It rarely sets direction, but it can amplify a rally already under way.",
+    "why_en": "The Nikkei's fifth straight gain to 66,364 was helped by dividend buying that reverses after the September 29 ex-date.",
     "facts": [
       {
-        "label": "GENIUS Act signed",
-        "value": "Jul 2025"
+        "label": "Record date",
+        "value": "Sep 30"
       },
       {
-        "label": "Reserve backing",
-        "value": "1:1"
+        "label": "Ex-dividend date",
+        "value": "Sep 29"
       },
       {
-        "label": "T-bill max maturity",
-        "value": "93 days"
+        "label": "Settlement (TSE)",
+        "value": "T+2"
       },
       {
-        "label": "Federal threshold",
-        "value": "$10B"
+        "label": "N225 1d change",
+        "value": "+1.3%"
       }
     ],
     "sources": [
       {
-        "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
-        "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
-      },
-      {
-        "title": "Fed proposes reserve limits, capital standards for stablecoin issuers under GENIUS Act",
-        "url": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336"
+        "title": "東証大引け 日経平均は5日続伸 AI・半導体関連が押し上げ 中間配当の権利取りも追い風",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRbE5ENHp3ZlJpREY1RGR1TnN5ZmJmYlJJX09uRmk1NlVqQlg0Ri1VM2J3V2NXMk9aOGxPMkZ0TU4tTlpic0pZaFdLSFZITmVxd09PN1FUY21NcEF2TkYzVFpuLVA1N2dRd1oxdQ?oc=5"
       }
-    ]
+    ],
+    "chart": {
+      "series": [
+        "N225",
+        "TOPIX"
+      ],
+      "title": "Nikkei vs TOPIX, 7 days",
+      "note": "Bank-heavy TOPIX keeps pace into the dividend cutoff"
+    }
   },
   "reading": [
     {
-      "title": "日経平均850円高 金利高はねのけ5連騰､「米中友好」AI加速に安堵感",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tdmc3MDZGeEl4RmxwTmRvUk15MDcxSHhfX3c4ZDIxcVNSMmFVbE9hUlBURTU3RjZsaDQ2YWJtaVNSajJ4MmdCaHlfM29LWDU3QnRNOHRablYwakhIWEtwUmt5S1FEdC1QUk1HQw?oc=5",
-      "source": "日経 経済",
-      "why": "AI・半導体主導で日経平均が高値圏で5連騰"
+      "title": "Foreign capital flows into US stocks hit record as appetite for debt fades",
+      "url": "https://www.ft.com/content/a1a1318b-8051-4539-a485-5a4e1d021578?syn-25a6b1a6=1",
+      "source": "FT Markets",
+      "why": "Explains why equities rally while Treasuries sell off"
     },
     {
-      "title": "Rising Interest Rates Are Causing Alarm. Here’s What to Know.",
-      "url": "https://www.nytimes.com/2026/09/25/business/interest-rates-economy-markets-inflation-mortgages.html",
-      "source": "NYT Business",
-      "why": "Plain-English map of the 5% Treasury world"
+      "title": "Japan’s bond ‘falling knife’ stalls repatriation rush",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdENrNVA5bDJBSTgwQVY4RjBDNW5UQjJBSW1aY3ExS2VQQjQzWFhPdWFlam5fWS1sY2pseWowM0lCZWhnTzJqUHlocUVPOTdSRmw3T2RPYTlZU1dzNDQ0VkthQk84RzVHRXlTdlJBVzVzd0Y0M0kwMGY4Zy0zMi1UaDRtYy04RkIydm9EVFNRdUNTeWhnNUJOWnpBQQ?oc=5",
+      "source": "The Japan Times",
+      "why": "JGB losses keep Japanese money abroad, capping the yen"
+    },
+    {
+      "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
+      "url": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
+      "source": "CoinDesk",
+      "why": "Key SEC crypto voice exits as rulebook is written"
     }
   ],
-  "generated_at": "2026-09-25T12:50:37+00:00"
+  "generated_at": "2026-09-26T15:05:27+00:00"
 }
