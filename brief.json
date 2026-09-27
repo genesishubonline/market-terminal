@@ -1,96 +1,99 @@
 {
-  "date": "2026-09-26",
-  "headline": "円が156円台へ反発、日米財務相協議で介入警戒強まる",
+  "date": "2026-09-27",
+  "headline": "円が1日で2円超上昇し156円台へ、介入警戒強まる",
   "headline_url": "https://news.web.nhk/newsweb/na/nd-20260926de52516",
   "headline_source": "NHK 経済",
-  "lead": "ドル円は1日で2円超下落し157.18円、円の過小評価を日米が再確認したことで介入リスクが再び意識される。",
+  "lead": "トランプ氏の円安懸念と日本側の口先介入が重なり、ドル円は7日高値158.89から反落、10月日銀利上げ観測も強まっている。",
   "chart": {
     "series": [
       "USDJPY"
     ],
-    "title": "ドル円 7日間の推移",
-    "note": "158.81円の高値から財務相協議を機に反落、157円台へ",
+    "title": "ドル円 直近7日間",
+    "note": "158.89の高値から157.18へ急反落、当局発言が転換点",
     "mark": {
-      "t": "2026-09-25T14:51:00+00:00",
-      "label": "日米財務相協議"
+      "t": "2026-09-25T15:00:00Z",
+      "label": "円急伸・介入警戒"
     }
   },
   "points": [
     {
-      "title": "日経平均5日続伸、66,364円",
-      "detail": "半導体関連と銀行株がけん引し前日比1.3%高、中間配当の権利取りも追い風となり節目の66,000円台を回復した。",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRbE5ENHp3ZlJpREY1RGR1TnN5ZmJmYlJJX09uRmk1NlVqQlg0Ri1VM2J3V2NXMk9aOGxPMkZ0TU4tTlpic0pZaFdLSFZITmVxd09PN1FUY21NcEF2TkYzVFpuLVA1N2dRd1oxdQ?oc=5",
-      "source": "日本経済新聞"
+      "title": "日経平均5日続伸、半導体と銀行が主導",
+      "detail": "日経平均は6万6366円で週間5.43%高、半導体関連株と銀行株がけん引しTOPIXも週間2.06%上昇した。",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNT29jcmJjV0lBUG9JdmVCTVBSSGNIR05VTGI3My1yeWI0ZHF2WkNuRm1Ia0dhOWRLUTdJN25CbVVqWll2U29QZXN5aUk3R3NmTXRvaHVaZTdNbTdwbzBmS1pCTk5EYkh5Q0FkVWUxU3pmV2VqenpRRzFTYmN6UTBDcVJaektYdw?oc=5",
+      "source": "Reuters"
     },
     {
-      "title": "Ten-year Treasury holds above 5%",
-      "detail": "The 10-year yield sits at 5.18%, up 4.8% on the week, as Cleveland Fed's Hammack ties it to growth, debt supply and the rate path.",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-25/fed-s-hammack-says-yields-reflect-growth-us-debt-and-rate-path",
-      "source": "Bloomberg Economics"
+      "title": "Jobs report is the next yield test",
+      "detail": "The US 10-year sits at 5.18%, up from 4.94% a week ago, and a hot Friday payrolls print could push long yields higher still.",
+      "url": "https://www.marketwatch.com/story/why-the-upcoming-jobs-report-could-send-10-year-and-30-year-treasury-yields-surging-67eab4ba?mod=mw_rss_topstories",
+      "source": "MarketWatch"
     },
     {
-      "title": "Bitcoin ETFs pull in nearly $3B",
-      "detail": "Spot ETF inflows extended their streak while BTC held $84,161, up 3.5% over seven days despite a 0.6% daily dip.",
-      "url": "https://bitcoinmagazine.com/news/bitcoin-etfs-bring-in-nearly-3-billion",
-      "source": "Bitcoin Magazine"
+      "title": "Bitcoin ETFs back in the black",
+      "detail": "Spot Bitcoin ETFs took in $2.4 billion last week, the most since October, as BTC gained 4.0% to about $84,900.",
+      "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+      "source": "The Block"
     }
   ],
   "knowledge": {
-    "title_en": "Kenri-tori: Japan's Late-September Dividend Bid",
-    "body_en": "Most Japanese companies close their fiscal year on March 31 and pay an interim dividend with a September 30 record date. To be on the register you must own the shares by the ex-dividend day, one business day earlier under T+2 settlement, so September 29 this year. Buying ahead of that cutoff is called kenri-tori, taking the right.\n\nThe effect is a mechanical bid in the last week of September, especially in high-yield banks, trading houses and utilities, followed by an ex-dividend drop roughly equal to the payout. Index futures price this in, so cash-versus-futures basis widens briefly. It rarely sets direction, but it can amplify a rally already under way.",
-    "why_en": "The Nikkei's fifth straight gain to 66,364 was helped by dividend buying that reverses after the September 29 ex-date.",
+    "title_en": "How Spot Bitcoin ETF Inflows Reach the Market",
+    "body_en": "A spot Bitcoin ETF does not buy coins when you buy shares. Investors trade shares on an exchange; when demand pushes the share price above the fund's net asset value, authorized participants (large broker-dealers) create new shares by delivering cash or bitcoin to the issuer, then sell those shares to capture the gap. Redemptions work in reverse when shares trade at a discount.\n\nReported daily flows are therefore the net of creations and redemptions, not retail order tickets. They lag price by a day or more, so flows usually confirm a move rather than lead it. A streak of creations does mean real bitcoin is being pulled into custody, tightening float on exchanges.",
+    "why_en": "Last week's $2.4 billion of creations turned 2026 ETF flows positive while BTC rose 4%, a sign the bid is arriving through the arbitrage channel.",
     "facts": [
       {
-        "label": "Record date",
-        "value": "Sep 30"
+        "label": "BTC spot",
+        "value": "$84,909"
       },
       {
-        "label": "Ex-dividend date",
-        "value": "Sep 29"
+        "label": "BTC 7d change",
+        "value": "+4.03%"
       },
       {
-        "label": "Settlement (TSE)",
-        "value": "T+2"
+        "label": "Weekly ETF inflow",
+        "value": "$2.4B"
       },
       {
-        "label": "N225 1d change",
-        "value": "+1.3%"
+        "label": "US spot ETFs since",
+        "value": "Jan 2024"
       }
     ],
     "sources": [
       {
-        "title": "東証大引け 日経平均は5日続伸 AI・半導体関連が押し上げ 中間配当の権利取りも追い風",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRbE5ENHp3ZlJpREY1RGR1TnN5ZmJmYlJJX09uRmk1NlVqQlg0Ri1VM2J3V2NXMk9aOGxPMkZ0TU4tTlpic0pZaFdLSFZITmVxd09PN1FUY21NcEF2TkYzVFpuLVA1N2dRd1oxdQ?oc=5"
+        "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow",
+        "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944"
+      },
+      {
+        "title": "Bitcoin ETFs Notch Seven-Day Winning Streak as 2026 Flows Turn Green",
+        "url": "https://decrypt.co/379391/bitcoin-etfs-notch-seven-day-winning-streak-as-2026-flows-turn-green"
       }
     ],
     "chart": {
       "series": [
-        "N225",
-        "TOPIX"
+        "BTC"
       ],
-      "title": "Nikkei vs TOPIX, 7 days",
-      "note": "Bank-heavy TOPIX keeps pace into the dividend cutoff"
+      "title": "Bitcoin, 7 days",
+      "note": "Grind higher from 80,982 toward 87,165 as ETF creations resumed"
     }
   },
   "reading": [
     {
-      "title": "Foreign capital flows into US stocks hit record as appetite for debt fades",
-      "url": "https://www.ft.com/content/a1a1318b-8051-4539-a485-5a4e1d021578?syn-25a6b1a6=1",
-      "source": "FT Markets",
-      "why": "Explains why equities rally while Treasuries sell off"
-    },
-    {
       "title": "Japan’s bond ‘falling knife’ stalls repatriation rush",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdENrNVA5bDJBSTgwQVY4RjBDNW5UQjJBSW1aY3ExS2VQQjQzWFhPdWFlam5fWS1sY2pseWowM0lCZWhnTzJqUHlocUVPOTdSRmw3T2RPYTlZU1dzNDQ0VkthQk84RzVHRXlTdlJBVzVzd0Y0M0kwMGY4Zy0zMi1UaDRtYy04RkIydm9EVFNRdUNTeWhnNUJOWnpBQQ?oc=5",
       "source": "The Japan Times",
-      "why": "JGB losses keep Japanese money abroad, capping the yen"
+      "why": "Why JGB selling is blunting yen repatriation flows"
     },
     {
-      "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
-      "url": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
-      "source": "CoinDesk",
-      "why": "Key SEC crypto voice exits as rulebook is written"
+      "title": "Big dreams and tiny revenue are the new norm for AI IPOs",
+      "url": "https://www.ft.com/content/b5707707-730e-40d3-9ff7-8ebfe27d5708?syn-25a6b1a6=1",
+      "source": "FT Markets",
+      "why": "AI listings priced on promise, not sales"
+    },
+    {
+      "title": "US Jobs Report Seen Showing 90,000 Payrolls, 4.1% Unemployment Rate",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-26/us-jobs-report-seen-showing-90-000-payrolls-4-1-unemployment-rate",
+      "source": "Bloomberg Economics",
+      "why": "The consensus that Friday's yields will trade against"
     }
   ],
-  "generated_at": "2026-09-26T15:05:27+00:00"
+  "generated_at": "2026-09-27T12:05:25+00:00"
 }
