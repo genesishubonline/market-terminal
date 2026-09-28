@@ -1,99 +1,100 @@
 {
-  "date": "2026-09-27",
-  "headline": "円が1日で2円超上昇し156円台へ、介入警戒強まる",
-  "headline_url": "https://news.web.nhk/newsweb/na/nd-20260926de52516",
+  "date": "2026-09-28",
+  "headline": "円が急伸、日米協調対応を意識し一時156円台半ば",
+  "headline_url": "https://news.web.nhk/newsweb/na/nd-20260928de52897",
   "headline_source": "NHK 経済",
-  "lead": "トランプ氏の円安懸念と日本側の口先介入が重なり、ドル円は7日高値158.89から反落、10月日銀利上げ観測も強まっている。",
+  "lead": "円安けん制発言と日米協調介入への警戒で円が1%超上昇、160円接近を試す流れにひとまず歯止めがかかった。",
   "chart": {
     "series": [
       "USDJPY"
     ],
-    "title": "ドル円 直近7日間",
-    "note": "158.89の高値から157.18へ急反落、当局発言が転換点",
+    "title": "ドル円 7日間の推移",
+    "note": "158.9円の高値から1日で157円まで急落、介入警戒が反映",
     "mark": {
-      "t": "2026-09-25T15:00:00Z",
-      "label": "円急伸・介入警戒"
+      "t": "2026-09-28T07:00:00Z",
+      "label": "円安けん制発言"
     }
   },
   "points": [
     {
-      "title": "日経平均5日続伸、半導体と銀行が主導",
-      "detail": "日経平均は6万6366円で週間5.43%高、半導体関連株と銀行株がけん引しTOPIXも週間2.06%上昇した。",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNT29jcmJjV0lBUG9JdmVCTVBSSGNIR05VTGI3My1yeWI0ZHF2WkNuRm1Ia0dhOWRLUTdJN25CbVVqWll2U29QZXN5aUk3R3NmTXRvaHVaZTdNbTdwbzBmS1pCTk5EYkh5Q0FkVWUxU3pmV2VqenpRRzFTYmN6UTBDcVJaektYdw?oc=5",
-      "source": "Reuters"
+      "title": "Oil surge deepens bond rout",
+      "detail": "WTI jumped 4.2% to $96 as US-Iran talks stalled, pushing the 10-year Treasury yield to 5.18% and the VIX up 10% to 16.4.",
+      "url": "https://www.ft.com/content/d751ad99-531d-4990-9a4c-ee89a9fc1b2d?syn-25a6b1a6=1",
+      "source": "FT Markets"
     },
     {
-      "title": "Jobs report is the next yield test",
-      "detail": "The US 10-year sits at 5.18%, up from 4.94% a week ago, and a hot Friday payrolls print could push long yields higher still.",
-      "url": "https://www.marketwatch.com/story/why-the-upcoming-jobs-report-could-send-10-year-and-30-year-treasury-yields-surging-67eab4ba?mod=mw_rss_topstories",
-      "source": "MarketWatch"
+      "title": "Bitcoin slips below $83,000",
+      "detail": "BTC unwound Friday's rally as oil and yields rose; futures positioning near yearly lows suggests the ETF-led bid is thinning for now.",
+      "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-falls-to-usd83-000-while-altcoins-unwind-friday-s-rally",
+      "source": "CoinDesk Policy"
     },
     {
-      "title": "Bitcoin ETFs back in the black",
-      "detail": "Spot Bitcoin ETFs took in $2.4 billion last week, the most since October, as BTC gained 4.0% to about $84,900.",
-      "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
-      "source": "The Block"
+      "title": "Nvidia sells guardrails for AI agents",
+      "detail": "Nasdaq is still up 2.5% on the week near 27,065 as agent-safety tooling becomes a product line after a run of rogue-agent incidents.",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-28/nvidia-debuts-system-designed-to-stop-ai-agents-from-going-awry",
+      "source": "Bloomberg Technology"
     }
   ],
   "knowledge": {
-    "title_en": "How Spot Bitcoin ETF Inflows Reach the Market",
-    "body_en": "A spot Bitcoin ETF does not buy coins when you buy shares. Investors trade shares on an exchange; when demand pushes the share price above the fund's net asset value, authorized participants (large broker-dealers) create new shares by delivering cash or bitcoin to the issuer, then sell those shares to capture the gap. Redemptions work in reverse when shares trade at a discount.\n\nReported daily flows are therefore the net of creations and redemptions, not retail order tickets. They lag price by a day or more, so flows usually confirm a move rather than lead it. A streak of creations does mean real bitcoin is being pulled into custody, tightening float on exchanges.",
-    "why_en": "Last week's $2.4 billion of creations turned 2026 ETF flows positive while BTC rose 4%, a sign the bid is arriving through the arbitrage channel.",
+    "title_en": "Breakevens: How Oil Gets Into Bond Yields",
+    "body_en": "A nominal Treasury yield splits into a real yield and a breakeven, the inflation rate at which an inflation-linked bond and a nominal bond return the same. Breakevens are traded, so they move with anything that changes the expected price path. Oil is the fastest input: it feeds headline CPI within weeks through gasoline, and markets reprice near-term breakevens almost tick for tick with crude.\n\nThat is why an oil spike hits bonds even when growth looks unchanged. Higher breakevens lift nominal yields directly; if the central bank is then expected to lean against it, real yields rise too. Gold often falls in that second case, since real yields are its opportunity cost.",
+    "why_en": "WTI is up 4% and the 10-year yield sits at 5.18% today, while gold has dropped 4.6% on the week.",
     "facts": [
       {
-        "label": "BTC spot",
-        "value": "$84,909"
+        "label": "US 10Y yield",
+        "value": "5.18%"
       },
       {
-        "label": "BTC 7d change",
-        "value": "+4.03%"
+        "label": "WTI crude",
+        "value": "$96.26"
       },
       {
-        "label": "Weekly ETF inflow",
-        "value": "$2.4B"
+        "label": "Gold, 7d",
+        "value": "-4.64%"
       },
       {
-        "label": "US spot ETFs since",
-        "value": "Jan 2024"
+        "label": "Fed inflation target",
+        "value": "2%"
       }
     ],
     "sources": [
       {
-        "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow",
-        "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944"
+        "title": "Bond sell-off deepens as oil rises above $108",
+        "url": "https://www.ft.com/content/d751ad99-531d-4990-9a4c-ee89a9fc1b2d?syn-25a6b1a6=1"
       },
       {
-        "title": "Bitcoin ETFs Notch Seven-Day Winning Streak as 2026 Flows Turn Green",
-        "url": "https://decrypt.co/379391/bitcoin-etfs-notch-seven-day-winning-streak-as-2026-flows-turn-green"
+        "title": "Oil Prices Climb on Continued Impasse in U.S.-Iran Talks",
+        "url": "https://www.nytimes.com/2026/09/28/business/oil-stocks-gas-prices.html"
       }
     ],
     "chart": {
       "series": [
-        "BTC"
+        "US10Y",
+        "WTI"
       ],
-      "title": "Bitcoin, 7 days",
-      "note": "Grind higher from 80,982 toward 87,165 as ETF creations resumed"
+      "title": "10Y yield vs WTI, 7 days",
+      "note": "Yields tracked crude higher all week"
     }
   },
   "reading": [
     {
-      "title": "Japan’s bond ‘falling knife’ stalls repatriation rush",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdENrNVA5bDJBSTgwQVY4RjBDNW5UQjJBSW1aY3ExS2VQQjQzWFhPdWFlam5fWS1sY2pseWowM0lCZWhnTzJqUHlocUVPOTdSRmw3T2RPYTlZU1dzNDQ0VkthQk84RzVHRXlTdlJBVzVzd0Y0M0kwMGY4Zy0zMi1UaDRtYy04RkIydm9EVFNRdUNTeWhnNUJOWnpBQQ?oc=5",
-      "source": "The Japan Times",
-      "why": "Why JGB selling is blunting yen repatriation flows"
+      "title": "中期債利回りが一段と上昇、2年債2%迫る 日銀早期利上げ観測で",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5zeVk2YmxEak1VZG9BM2ZDR3FFVlJ3djdtVVRtVHBGMGN3NXU5cUU4WnhYa2JsdGVSWjRqZlF3bEpLX2tXZFBaMDVFeDZLMVRRMlJRQXk2WmgwT2NNZ0J4c0ppTzJqVnItZnlhYg?oc=5",
+      "source": "日経 経済",
+      "why": "JGB curve pricing an early BOJ hike"
     },
     {
-      "title": "Big dreams and tiny revenue are the new norm for AI IPOs",
-      "url": "https://www.ft.com/content/b5707707-730e-40d3-9ff7-8ebfe27d5708?syn-25a6b1a6=1",
-      "source": "FT Markets",
-      "why": "AI listings priced on promise, not sales"
+      "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
+      "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+      "source": "The Block",
+      "why": "Record inflows met today's drop"
     },
     {
-      "title": "US Jobs Report Seen Showing 90,000 Payrolls, 4.1% Unemployment Rate",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-26/us-jobs-report-seen-showing-90-000-payrolls-4-1-unemployment-rate",
-      "source": "Bloomberg Economics",
-      "why": "The consensus that Friday's yields will trade against"
+      "title": "China, US agree tariff cuts on $60 billion of goods including agriculture, household items",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaTBqVzRGcGNNZ2M5YWVLbUQxanlOVWhxYU5lWjNuYzJSWmtHV2lQTWdSUXlpTGM3M1UzU2JUckNLUGxIc3dFVWx5WlExNnotSmtQblE4UnM0Sk1OVnQycjVkR0ozUlpzMW5MMExHNll4NDR2dXpfWTNCMVpQT0docjI1SHFDeFdwYnZGVlVocXhzTy10WWViRk54VklyNzNiRFczXy04aURCdVdmSEdNbjNrRHpXNXM5LWRCZzJQajZVMVBx?oc=5",
+      "source": "Reuters Business",
+      "why": "Trade thaw ahead of Xi's Washington visit"
     }
   ],
-  "generated_at": "2026-09-27T12:05:25+00:00"
+  "generated_at": "2026-09-28T11:18:51+00:00"
 }
