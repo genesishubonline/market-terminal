@@ -1,100 +1,95 @@
 {
-  "date": "2026-10-01",
-  "headline": "US Treasury rout deepens as 10-year yield tops 5.29%",
-  "headline_url": "https://www.ft.com/content/39de7709-7b5b-42f6-ad90-df50f1308ea2?syn-25a6b1a6=1",
-  "headline_source": "FT Markets",
-  "lead": "The 10-year yield reached 5.30%, its 7-day high, as strong US data reignited the selloff and dragged stocks and Bitcoin with it.",
+  "date": "2026-10-02",
+  "headline": "日経平均2203円高の6万8956円、半導体主導で1カ月半ぶり高値",
+  "headline_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9pT2JjVnlGcy1xeGV1cUhIZFloZDdXdHJRYnhyOGNYb1VmaGdFVU0xbjYwd0pMeHBVVFlhOHo2UXUzUklWeUFmN2xKVnhaLXZwNnJSeHY5UUExSEJRYjFvclNaOEZSRTdQSmZ3SQ?oc=5",
+  "headline_source": "日本経済新聞",
+  "lead": "半導体の局所買いで3.35%高だがTOPIXは0.72%高にとどまり、上昇の裾野は狭い。158円台の円安も追い風。",
   "chart": {
     "series": [
-      "US10Y"
+      "N225"
     ],
-    "title": "US 10Y yield, last 7 days",
-    "note": "From 4.94% to 5.30% in a week; the selloff is not pausing",
+    "title": "日経平均 直近7日間",
+    "note": "週間6.6%高、半導体主導で1カ月半ぶり高値を更新",
     "mark": {
-      "t": "2026-09-30T14:00:00Z",
-      "label": "Q2 GDP revised up"
+      "t": "2026-10-01T06:00:00Z",
+      "label": "2203円高で大引け"
     }
   },
   "points": [
     {
-      "title": "日経平均、半導体主導で3日ぶり反発",
-      "detail": "日経平均は前日比2.11%高の6万6864円と3日ぶりに反発し、米半導体株高を受けて太陽誘電・TDKなどに買いが集まり9月は月間でも上昇した。",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DSGttTlFCb1pibDZiNHFOeFpNOGkycWxVN1VodlUwUnJfUWdfRV80RFdmRS1Qa3JnbXVTUnA0Ry00NWE5MDNERGZOcU5FNnJEUV8zakdRUE9CMFh2MFByT1FmOHEwTWhGa0lqMQ?oc=5",
-      "source": "日本経済新聞"
-    },
-    {
-      "title": "Bitcoin rejected at $85,000 as yields bite",
-      "detail": "BTC slipped back to $83,687 after a brief push above $85,000, down 0.9% on the week as the Treasury selloff sapped risk appetite.",
-      "url": "https://cryptoslate.com/bitcoin-fails-to-sustain-85000-breakout-and-bond-yield-spikes-are-blamed/",
-      "source": "CryptoSlate"
-    },
-    {
-      "title": "Micron beats, AI memory demand intact",
-      "detail": "Micron's revenue forecast topped estimates with a swelling backlog, helping the Nasdaq add 0.26% while the S&P 500 fell 0.23% under rate pressure.",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSGljZXdlMjRDc2xMM29UN0s3NmM2cXVLUjVmbEdWRHVpRUwyeWltZDRNVUU0VDlYenBNc3lnVVh2SHprdnFSN3RjTWhKR3JYRk4xWHRtSzg5Qi01c3RuaGJnWDl3emxPZDhzckpDVlpRLUxENWlENUpXYWliRmtLc2FfNkFoQ2g2bEZFbWpULVRhQllzX0NDTFJTZw?oc=5",
+      "title": "Fed cools October hike talk",
+      "detail": "Officials pushed back on market bets for an October rate increase; the 10-year yield slipped 1.1% to 5.24% ahead of Friday's jobs report.",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcEdmemN4NUZ5RjRobklFbGFkcWZ0NENTRmZfU2hmNnFuZ1ZkRzJKY09hV3VLcjllT2V3VEVHdGg1NTFBbU1BVUJycDV1ODc5cTRxM1hCWlk5aW1RY3c0RzQ2bTNMcmsybi1VdDdoMG9RdUFrakRXSnFfb2trYmpOQzU5RmNmMXpqZlpJNUY1OEtEOGxnNXhlUjkzdmpnaWZVSVcwX1MyTHl1UQ?oc=5",
       "source": "Reuters"
+    },
+    {
+      "title": "SEC opens door to crypto self-custody",
+      "detail": "The proposal lets investment advisers and funds hold crypto under the Advisers Act custody rule; BTC held near $84,700, up 1.3% on the day.",
+      "url": "https://www.theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498",
+      "source": "The Block"
+    },
+    {
+      "title": "Global bond rout reaches Europe",
+      "detail": "Eurozone borrowing costs surged as the US 10-year yield rose 4.9% over seven days; the VIX is up 15.6% on the week to 16.4.",
+      "url": "https://www.ft.com/content/e485a228-1efe-426b-addc-26069ba48bf3?syn-25a6b1a6=1",
+      "source": "FT Markets"
     }
   ],
   "knowledge": {
-    "title_en": "Stock-Bond Correlation: When the Hedge Breaks",
-    "body_en": "For most of the 2000s and 2010s Treasuries rallied when stocks fell, so a 60/40 portfolio hedged itself. That relationship depends on what drives the selloff: growth scares push yields down and bond prices up while stocks fall, but inflation or supply shocks push yields up and equity multiples down at the same time.\n\nWhen the correlation turns positive, both legs lose at once. Risk-parity and volatility-targeting funds then cut exposure mechanically, selling bonds and stocks into weakness. That forced deleveraging is the 'vicious loop' traders describe: higher yields compress valuations, which triggers more selling of both.",
-    "why_en": "This week the 10-year yield rose 7% while the S&P 500 fell 1.5%, the positive-correlation regime in action.",
+    "title_en": "The Custody Rule: Why Advisers Need a Qualified Custodian",
+    "body_en": "Under the Investment Advisers Act of 1940, an adviser that holds or can move client assets has \"custody\" and must keep them with a qualified custodian: a bank, broker-dealer, futures merchant or certain foreign institutions. After Madoff, the 2009 amendments added surprise exams by an independent accountant and account statements sent directly to clients, so an adviser cannot both hold the money and report on it.\n\nCrypto never fit cleanly. Few qualified custodians would take tokens, and self-custody with private keys was treated as a violation. The SEC's new proposal defines when advisers and funds may hold crypto themselves and what controls replace the third-party check, which removes a core blocker for mainstream allocations.",
+    "why_en": "With BTC flat near $84,700, the custody proposal matters more for who can buy than for today's price.",
     "facts": [
       {
-        "label": "US 10Y yield",
-        "value": "5.29%"
+        "label": "Advisers Act",
+        "value": "1940"
       },
       {
-        "label": "10Y 7d change",
-        "value": "+7.2%"
+        "label": "Custody rule",
+        "value": "206(4)-2"
       },
       {
-        "label": "S&P 500 7d",
-        "value": "-1.45%"
+        "label": "Madoff amendments",
+        "value": "2009"
       },
       {
-        "label": "VIX",
-        "value": "16.3"
+        "label": "BTC spot",
+        "value": "$84,695"
       }
     ],
     "sources": [
       {
-        "title": "US government debt rout triggers ‘vicious loop’ of selling",
-        "url": "https://www.ft.com/content/39de7709-7b5b-42f6-ad90-df50f1308ea2?syn-25a6b1a6=1"
-      },
-      {
-        "title": "10-Year Treasury Yield Surges Toward 6%: What It Means for Stocks and Debt Markets",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSjdBLUdwUzZodVE0RlNfR1pxQVJsZFlONjRiS3B1eno1NFB6aTBoNkV0QU8yUjVpbzVxNkV4TFNQWnBoSEVxQzh3empkZm94amxNNmN0VVd5LUNoLUx1djRZa2lEZHdaM09PcjlWZUVXb1BTS1hrMlRsNFlHVkh4a2ZRMzMtQQ?oc=5"
+        "title": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
+        "url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal"
       }
     ],
     "chart": {
       "series": [
-        "SPX",
-        "US10Y"
+        "BTC"
       ],
-      "title": "S&P 500 vs US 10Y yield, 7 days",
-      "note": "Yield up, stocks down: the two are moving together, not hedging"
+      "title": "Bitcoin, 7 days",
+      "note": "Flat near $84.7k as the SEC custody proposal landed"
     }
   },
   "reading": [
     {
-      "title": "How the ‘AI put’ has become the only thing that matters for stocks",
-      "url": "https://www.marketwatch.com/story/this-is-the-big-risk-that-stock-investors-should-be-watching-as-rising-bond-yields-menace-markets-904cae0a?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "why": "Why AI earnings are offsetting rising yields, for now"
+      "title": "Why Micron’s 87% Gross Margin Is a Blessing and a Curse",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9XUE50ckhwdV9MQVZ3c0ktMkJKLUtpbTJjUURZdHN3WGg1SGJrbFVrZkh6XzIzTnUydDk5T1FtZFd1OWJ2R2tWU0Rjb2g0TUVjYUhoRFRrUkNPTFhILUNsWjJ3cnZ2eXhoSDNBN2pfVWJrZDlWZndrUmtZT1hXUQ?oc=5",
+      "source": "Barron's",
+      "why": "The memory margin cycle behind the Nikkei chip rally"
     },
     {
-      "title": "How the AI boom could worsen the rich world’s fiscal crunch",
-      "url": "https://www.economist.com/finance-and-economics/2026/09/29/how-the-ai-boom-could-worsen-the-rich-worlds-fiscal-crunch",
+      "title": "Governments want to hold America’s shares more than its debts",
+      "url": "https://www.economist.com/finance-and-economics/2026/10/01/governments-want-to-hold-americas-shares-more-than-its-debts",
       "source": "The Economist",
-      "why": "Links the AI build-out to the bond supply problem"
+      "why": "Reserve managers shifting from Treasuries to equities"
     },
     {
-      "title": "Banks Including SocGen, MUFG Pull Back From Data Center Loan Deals",
-      "url": "https://www.theinformation.com/briefings/banks-including-socgen-mufg-pull-back-data-center-loan-deals",
-      "source": "The Information",
-      "why": "First cracks in AI infrastructure financing"
+      "title": "Bitcoin ETFs are $5 billion away from a new flow record after a brutal 11-month reset",
+      "url": "https://cryptoslate.com/bitcoin-etfs-are-5-billion-from-a-new-flow-record-after-a-brutal-11-month-reset/",
+      "source": "CryptoSlate",
+      "why": "ETF flow context after BTC's best quarter"
     }
   ],
-  "generated_at": "2026-09-30T22:33:09+00:00"
+  "generated_at": "2026-10-01T22:13:12+00:00"
 }
