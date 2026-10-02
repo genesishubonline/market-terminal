@@ -1,95 +1,103 @@
 {
-  "date": "2026-10-02",
-  "headline": "日経平均2203円高の6万8956円、半導体主導で1カ月半ぶり高値",
-  "headline_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9pT2JjVnlGcy1xeGV1cUhIZFloZDdXdHJRYnhyOGNYb1VmaGdFVU0xbjYwd0pMeHBVVFlhOHo2UXUzUklWeUFmN2xKVnhaLXZwNnJSeHY5UUExSEJRYjFvclNaOEZSRTdQSmZ3SQ?oc=5",
-  "headline_source": "日本経済新聞",
-  "lead": "半導体の局所買いで3.35%高だがTOPIXは0.72%高にとどまり、上昇の裾野は狭い。158円台の円安も追い風。",
+  "date": "2026-10-03",
+  "headline": "US adds just 29,000 jobs in September; Fed October hike bets fade",
+  "headline_url": "https://www.ft.com/content/7fc80097-1926-4306-81e0-83d90a3d8a1d?syn-25a6b1a6=1",
+  "headline_source": "FT Markets",
+  "lead": "A sharp hiring slowdown pulled Fed hike odds down for October, helped stocks and bitcoin, and steadied a bond market that had just hit 24-year-high yields.",
   "chart": {
     "series": [
-      "N225"
+      "US10Y"
     ],
-    "title": "日経平均 直近7日間",
-    "note": "週間6.6%高、半導体主導で1カ月半ぶり高値を更新",
+    "title": "US 10Y yield, past 7 days",
+    "note": "Yield near 5.3% high; jobs miss stalls the climb",
     "mark": {
-      "t": "2026-10-01T06:00:00Z",
-      "label": "2203円高で大引け"
+      "t": "2026-10-02T12:30:00Z",
+      "label": "Sept jobs: +29k"
     }
   },
   "points": [
     {
-      "title": "Fed cools October hike talk",
-      "detail": "Officials pushed back on market bets for an October rate increase; the 10-year yield slipped 1.1% to 5.24% ahead of Friday's jobs report.",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcEdmemN4NUZ5RjRobklFbGFkcWZ0NENTRmZfU2hmNnFuZ1ZkRzJKY09hV3VLcjllT2V3VEVHdGg1NTFBbU1BVUJycDV1ODc5cTRxM1hCWlk5aW1RY3c0RzQ2bTNMcmsybi1VdDdoMG9RdUFrakRXSnFfb2trYmpOQzU5RmNmMXpqZlpJNUY1OEtEOGxnNXhlUjkzdmpnaWZVSVcwX1MyTHl1UQ?oc=5",
+      "title": "日経平均647円安、金利高が重荷",
+      "detail": "日経平均は3日ぶり反落し6万8190円（-1.11%）。米雇用統計を控えて様子見が強まり、バリュー株に戻り売りが出た。週間では+3.06%を維持。",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCdlVzVzJlNHFHVHpDcEpTMDhfODE3aGtPVEFpc0NIbjVJeDlaQTV4NDZ2ODR4SlBXdURCcW5oNVN2S052Qlo3c3o2N0kyNmt2Q216Y3RIQXJ2ZHp5WjRmajhhR2FhS3FfUHd0VA?oc=5",
+      "source": "日本経済新聞"
+    },
+    {
+      "title": "G7 taps 100m barrels of reserves",
+      "detail": "Allies agreed to release diesel and other stocks through the IEA after a US export-ban threat; WTI slipped 1.7% to $91.26.",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb19pQnVCc2dwWWN3NlFDRl9LSTJvQVRYQlpDNDRxM2lhcm9kQzNkOGE5Y1c4eGFQcEFaSHZfUTlydnhfZ25hbFdWSUlBMy1IMVM1S1hOYnA1SEJWby0tZnNzY25jek44MGY1UGprN2lHT25qN3hqLTMxazdES2s0QUczSTBzcUVpTmRRc0pqcG1wd19yR1FidVJka3otVWx5SkF1dm9TaHdzN2hzLW92M1lLdVlqSVk?oc=5",
       "source": "Reuters"
     },
     {
-      "title": "SEC opens door to crypto self-custody",
-      "detail": "The proposal lets investment advisers and funds hold crypto under the Advisers Act custody rule; BTC held near $84,700, up 1.3% on the day.",
-      "url": "https://www.theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498",
+      "title": "Ethereum L2 Blast winds down",
+      "detail": "Paradigm-backed Blast, once holding over $2 billion, shuts after costs exceed revenue; ETH sits at $2,665, down 0.8% on the week.",
+      "url": "https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583",
       "source": "The Block"
-    },
-    {
-      "title": "Global bond rout reaches Europe",
-      "detail": "Eurozone borrowing costs surged as the US 10-year yield rose 4.9% over seven days; the VIX is up 15.6% on the week to 16.4.",
-      "url": "https://www.ft.com/content/e485a228-1efe-426b-addc-26069ba48bf3?syn-25a6b1a6=1",
-      "source": "FT Markets"
     }
   ],
   "knowledge": {
-    "title_en": "The Custody Rule: Why Advisers Need a Qualified Custodian",
-    "body_en": "Under the Investment Advisers Act of 1940, an adviser that holds or can move client assets has \"custody\" and must keep them with a qualified custodian: a bank, broker-dealer, futures merchant or certain foreign institutions. After Madoff, the 2009 amendments added surprise exams by an independent accountant and account statements sent directly to clients, so an adviser cannot both hold the money and report on it.\n\nCrypto never fit cleanly. Few qualified custodians would take tokens, and self-custody with private keys was treated as a violation. The SEC's new proposal defines when advisers and funds may hold crypto themselves and what controls replace the third-party check, which removes a core blocker for mainstream allocations.",
-    "why_en": "With BTC flat near $84,700, the custody proposal matters more for who can buy than for today's price.",
+    "title_en": "IEA Coordinated Stock Releases: How Emergency Oil Hits the Market",
+    "body_en": "The International Energy Agency requires each member to hold oil stocks equal to at least 90 days of net imports. In a supply emergency the members can agree a collective action: each country releases a share, from government reserves like the US Strategic Petroleum Reserve or by relaxing the stock obligation on private companies.\n\nReleases work less through the barrels themselves than through expectations. Volumes are small next to roughly 100 million barrels of daily global demand, but a coordinated release signals a floor on how tight supply will get, which pulls down futures spreads and spot premiums. Product releases, like today's diesel, target the refined market directly.",
+    "why_en": "The G7's 100-million-barrel diesel release, announced as WTI slipped toward $91, is this mechanism in action.",
     "facts": [
       {
-        "label": "Advisers Act",
-        "value": "1940"
+        "label": "IEA stock rule",
+        "value": "90 days"
       },
       {
-        "label": "Custody rule",
-        "value": "206(4)-2"
+        "label": "G7 release",
+        "value": "100m bbl"
       },
       {
-        "label": "Madoff amendments",
-        "value": "2009"
+        "label": "WTI crude",
+        "value": "$91.26"
       },
       {
-        "label": "BTC spot",
-        "value": "$84,695"
+        "label": "IEA founded",
+        "value": "1974"
       }
     ],
     "sources": [
       {
-        "title": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
-        "url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal"
+        "title": "U.S. and Allies Agree to Release Diesel Reserves as Prices Soar",
+        "url": "https://www.nytimes.com/2026/10/02/business/diesel-reserves-g7.html"
+      },
+      {
+        "title": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
+        "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "chart": {
       "series": [
-        "BTC"
+        "WTI"
       ],
-      "title": "Bitcoin, 7 days",
-      "note": "Flat near $84.7k as the SEC custody proposal landed"
+      "title": "WTI crude, past 7 days",
+      "note": "Down from $96 high as reserve release looms",
+      "mark": {
+        "t": "2026-10-02T16:49:45Z",
+        "label": "G7 release"
+      }
     }
   },
   "reading": [
     {
-      "title": "Why Micron’s 87% Gross Margin Is a Blessing and a Curse",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9XUE50ckhwdV9MQVZ3c0ktMkJKLUtpbTJjUURZdHN3WGg1SGJrbFVrZkh6XzIzTnUydDk5T1FtZFd1OWJ2R2tWU0Rjb2g0TUVjYUhoRFRrUkNPTFhILUNsWjJ3cnZ2eXhoSDNBN2pfVWJrZDlWZndrUmtZT1hXUQ?oc=5",
-      "source": "Barron's",
-      "why": "The memory margin cycle behind the Nikkei chip rally"
+      "title": "ECB’s Nightmare Scenario Gets Closer as French Yields Surge",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-02/ecb-s-nightmare-scenario-gets-closer-as-french-bond-yields-surge",
+      "source": "Bloomberg Economics",
+      "why": "French yields at 24-year high test ECB fragmentation limits"
     },
     {
-      "title": "Governments want to hold America’s shares more than its debts",
-      "url": "https://www.economist.com/finance-and-economics/2026/10/01/governments-want-to-hold-americas-shares-more-than-its-debts",
-      "source": "The Economist",
-      "why": "Reserve managers shifting from Treasuries to equities"
+      "title": "AI Data Center Debt Is Showing Up Everywhere",
+      "url": "https://www.theinformation.com/articles/ai-data-center-debt-showing-everywhere",
+      "source": "The Information",
+      "why": "Where the AI buildout leverage is hiding in credit"
     },
     {
-      "title": "Bitcoin ETFs are $5 billion away from a new flow record after a brutal 11-month reset",
-      "url": "https://cryptoslate.com/bitcoin-etfs-are-5-billion-from-a-new-flow-record-after-a-brutal-11-month-reset/",
+      "title": "Stablecoin issuers have replaced 40% of China’s lost US Treasury demand",
+      "url": "https://cryptoslate.com/stablecoin-issuers-have-replaced-40-of-chinas-lost-us-treasury-demand/",
       "source": "CryptoSlate",
-      "why": "ETF flow context after BTC's best quarter"
+      "why": "Stablecoins as a marginal Treasury buyer at 5.3% yields"
     }
   ],
-  "generated_at": "2026-10-01T22:13:12+00:00"
+  "generated_at": "2026-10-02T22:01:56+00:00"
 }
